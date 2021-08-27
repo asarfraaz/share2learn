@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Welcome to Share2Learn
+## Welcome to Share2Learn
 
 <p> I'm glad you are here. </p>
 
