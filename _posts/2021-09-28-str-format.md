@@ -5,5 +5,12 @@ author: Arjun
 category: Tutorial
 ---
 
+This is how you use senter allignment
 
-test text
+example
+```python
+name = "Hello Python"
+print(f"{name:^10}")
+```
+End of Topic
+
