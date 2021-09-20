@@ -13,6 +13,7 @@ This blog is all about to have fun with String,Text processing in python
 
 Lets divide this String tutorial into 3 parts
 
+<br>
 
 **Part 1 - Strings Overview & String Operators**
 
@@ -20,9 +21,13 @@ Lets divide this String tutorial into 3 parts
 
 **Part 3 - Strings methods**
 
+<br>
+
 This Blog covers **Part 1** and will continue other parts in upcoming blogs
 
 ok, enough talking, lets move on ,
+
+<br>
 
 **What is String in Python**
 
