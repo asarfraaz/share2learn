@@ -1,11 +1,6 @@
 String Operators
 + - Concatenation
 
-```
->>> 'Hello'+'python'
-'Hellopython'
-```
-
 * - Repetition
 
 [] - Slice
