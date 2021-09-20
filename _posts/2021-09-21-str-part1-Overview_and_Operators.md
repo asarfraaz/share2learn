@@ -42,6 +42,10 @@ example:
 **String Operators**
 
 "+" - Concatenation
+```python
+>>> "Hello" + 'Python'
+'HelloPython'
+```
 
 "*" - Repetition
 
