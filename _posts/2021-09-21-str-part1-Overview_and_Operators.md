@@ -90,7 +90,19 @@ It is the sequence of Unicode characters wrapped inside single, double, or tripl
 
 in |  not in - Membership 
 ```python
+#**in** returns True if if match exists
+>>> text
+'Hello Python'
+>>> "Hello" in text
+True
+>>> "hello" in text
+False
 
+#**in** returns True if if match NOT exists
+>>> "hello" not in text
+True
+>>> "Hello" not in text
+False
 ```
 
 r/R - Raw String
