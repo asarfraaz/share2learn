@@ -76,13 +76,13 @@ It is the sequence of Unicode characters wrapped inside single, double, or tripl
 ```python
 >>> text[0:5]
 'Hello'
->>> text[:5]
+>>> text[:5] #from starting index upto 5
 'Hello'
->>> text[2:5]
+>>> text[2:5] #from index 2 to 5
 'llo'
->>> text[1::]
+>>> text[1::] #from index 2 to 5
 'ello Python'
->>> text[::-1]# String reverse
+>>> text[::-1] #String reverse
 'nohtyP olleH'
 ```
 
