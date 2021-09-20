@@ -52,7 +52,8 @@ example:
 
 "*" - Repetition
 ```python
-
+>>> "hello"*5
+'hellohellohellohellohello'
 ```
 
 [] - Slice
