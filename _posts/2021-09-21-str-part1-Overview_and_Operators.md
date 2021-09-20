@@ -6,9 +6,16 @@ Category: Tutorial
 ---
 
 
-Lets Play with Strings & Texts
 
 Hi There ! Welcome to share2learn !!! This blog is all about to have fun with String,Text processing in python
+
+Lets divide this String tutorial into 3 parts
+
+**Part 1 - Strings Overview & String Operators **
+
+**Part 2 - String Formatting**
+
+**Part 3 - Strings methods **
 
 1.What is String & Text in Python
 
