@@ -46,6 +46,9 @@ It is the sequence of Unicode characters wrapped inside single, double, or tripl
 
 """HI there I am STRING in Python with triple double-quotes"""
 ```
+**Q:** if we want to perform some basic operations on Strings in python, how can we do it ?
+
+**ANS:** we have multiple options , operators are one of them .Lets look at available String operators in python
 
 **String Operators**
 
