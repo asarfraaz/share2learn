@@ -108,7 +108,10 @@ False
 r/R - Raw String
 ```python
 #Suppresses actual meaning of Escape characters
-
+>>> print (r'\n')
+\n
+>>> print (R'\n')
+\n
 
 ```
 
