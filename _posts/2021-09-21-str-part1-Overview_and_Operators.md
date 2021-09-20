@@ -20,9 +20,9 @@ Lets divide this String tutorial into 3 parts
 
 **Part 3 - Strings methods**
 
-This Blog covers Part one and will continue other parts in upcoming blogs
+This Blog covers **Part 1** and will continue other parts in upcoming blogs
 
-ok, lets move on ,
+ok, enough talking, lets move on ,
 
 **What is String in Python**
 
@@ -30,7 +30,7 @@ String is an immutable sequence data type
 
 It is the sequence of Unicode characters wrapped inside single, double, or triple quotes.
 
-example: 
+**example: **
 
 ```python
 'HI there I am STRING in Python with single quotes'
