@@ -107,6 +107,8 @@ False
 
 r/R - Raw String
 ```python
+#Suppresses actual meaning of Escape characters
+
 
 ```
 
