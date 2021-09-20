@@ -4,10 +4,9 @@ Date: 2021-09-21
 Author: Nagarjun V
 Category: Tutorial
 ---
+<br>
 
-
-
-Hi There ! Welcome to share2learn !!! 
+!!! Hi There ! Welcome to share2learn !!! 
 
 This blog is all about to have fun with String,Text processing in python
 
