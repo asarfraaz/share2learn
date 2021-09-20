@@ -51,13 +51,28 @@ example:
 ```
 
 "*" - Repetition
+```python
+
+```
 
 [] - Slice
+```python
+
+```
 
 [ : ] -  Slice in Range
+```python
+
+```
 
 in |  not in - Membership 
+```python
+
+```
 
 r/R - Raw String
+```python
+
+```
 
 % - Format
