@@ -69,7 +69,16 @@ example:
 
 [ : ] -  Slice in Range
 ```python
-
+>>> text[0:5]
+'Hello'
+>>> text[:5]
+'Hello'
+>>> text[2:5]
+'llo'
+>>> text[1::]
+'ello Python'
+>>> text[::-1]# String reverse
+'nohtyP olleH'
 ```
 
 in |  not in - Membership 
