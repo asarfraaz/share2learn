@@ -1,9 +1,10 @@
 ---
-title: "Python Strings : Part1 - Overview and String Operators"
-date: 2021-09-21
-author: Nagarjun V
-category: Tutorial
+Title: "Python Strings : Part1 - Overview and String Operators"
+Date: 2021-09-21
+Author: Nagarjun V
+Category: Tutorial
 ---
+
 
 Lets Play with Strings & Texts
 
