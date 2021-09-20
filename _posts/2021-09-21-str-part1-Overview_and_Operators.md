@@ -20,7 +20,10 @@ Lets divide this String tutorial into 3 parts
 
 **Part 3 - Strings methods**
 
-  
+This Blog covers Part one and will continue other parts in upcoming blogs
+
+ok, lets move on ,
+
 **What is String in Python**
 
 String is an immutable sequence data type
