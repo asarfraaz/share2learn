@@ -26,6 +26,7 @@ example: 'HI there I am STRING in Python with single quotes'
 
 
 String Operators
+
 "+" - Concatenation
 
 "*" - Repetition
