@@ -58,7 +58,13 @@ example:
 
 [] - Slice
 ```python
-
+>>> text = "Hello Python"
+>>> text
+'Hello Python'
+>>> text[0]
+'H'
+>>> text[-1] # accessing last element using negative indexing
+'n'
 ```
 
 [ : ] -  Slice in Range
