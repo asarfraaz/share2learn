@@ -116,3 +116,5 @@ r/R - Raw String
 ```
 
 % - Format
+Performs String formatting.Let us see this in  Part-2
+
