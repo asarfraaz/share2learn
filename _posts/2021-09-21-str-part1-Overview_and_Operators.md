@@ -116,5 +116,7 @@ r/R - Raw String
 ```
 
 % - Format
-Performs String formatting.Let us see this in  Part-2
+Performs String formatting. Let us see Formatting in details with Part-2
+
+
 
