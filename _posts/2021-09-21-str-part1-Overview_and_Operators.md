@@ -28,7 +28,7 @@ ok, enough talking, lets move on ,
 
 <br>
 
-**What is String in Python**
+<H2> **What is String in Python** </H2>
 
 String is an immutable sequence data type
 
@@ -49,7 +49,7 @@ It is the sequence of Unicode characters wrapped inside single, double, or tripl
 
 **ANS:** we have multiple options , operators are one of them .Lets look at available String operators in python
 
-**String Operators**
+<H3>**String Operators**</H3>
 
 "+" - Concatenation
 ```python
