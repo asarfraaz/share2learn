@@ -28,13 +28,13 @@ ok, enough talking, lets move on ,
 
 <br>
 
-<H2> **What is String in Python** </H2>
+<H2> What is String in Python</H2>
 
 String is an immutable sequence data type
 
 It is the sequence of Unicode characters wrapped inside single, double, or triple quotes.
 
-**example: **
+**example:**
 
 ```python
 'HI there I am STRING in Python with single quotes'
@@ -49,7 +49,7 @@ It is the sequence of Unicode characters wrapped inside single, double, or tripl
 
 **ANS:** we have multiple options , operators are one of them .Lets look at available String operators in python
 
-<H3>**String Operators**</H3>
+<H3>String Operators</H3>
 
 "+" - Concatenation
 ```python
