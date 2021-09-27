@@ -49,8 +49,24 @@ u'Hello Python ! '
 ```
 
 **%x**	hexadecimal integer (lowercase letters)
+```python
+>>> print ("%x" % 10)
+a
+>>> print ("%x" % 11)
+b
+>>> print ("%x" % 12)
+c
+```
 
 **%X**	hexadecimal integer (UPPERcase letters)
+```python
+>>> print ("%X" % 10)
+A
+>>> print ("%X" % 11)
+B
+>>> print ("%X" % 12)
+C
+```
 
 **%e**	exponential notation (with lowercase 'e')
 
