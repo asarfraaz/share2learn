@@ -17,6 +17,10 @@ Hello python , Welcome to SharetoLearn!
 ```
 
 %i	signed decimal integer
+```python
+>>> print("Hello %i + %i = %i" %(5,5,10))
+Hello 5 + 5 = 10
+```
 
 %d	signed decimal integer
 
