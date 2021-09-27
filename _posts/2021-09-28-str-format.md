@@ -37,6 +37,10 @@ Hello 5 + 5 = 10
 %E	exponential notation (with UPPERcase 'E')
 
 %f	floating point real number
+```python
+>>> print("Hello %f + %f = %f" %(5.1,5,10))
+Hello 5.100000 + 5.000000 = 10.000000
+```
 
 %g	the shorter of %f and %e
 
