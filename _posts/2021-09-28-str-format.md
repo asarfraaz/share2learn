@@ -41,6 +41,12 @@ u'Hello Python ! '
 ```
 
 **%o**	octal integer
+```python
+>>> print "%o" % 012
+12
+>>> print "%o" % 10
+12  # Because 012 ==12
+```
 
 **%x**	hexadecimal integer (lowercase letters)
 
