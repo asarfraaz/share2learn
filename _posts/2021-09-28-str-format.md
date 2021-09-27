@@ -5,6 +5,8 @@ author: Arjun
 category: Tutorial
 ---
 
+<h2>Here is the list of complete set of symbols which can be used along with "%"</h2>
+
 %c	character
 
 %s	string conversion via str() prior to formatting
@@ -32,7 +34,7 @@ category: Tutorial
 %G	the shorter of %f and %E
 
 
-Other supported symbols in Python
+<h2>Other supported symbols in Python</h2>
 
 "*"	argument specifies width or precision
 	
