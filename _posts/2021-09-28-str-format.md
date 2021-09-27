@@ -25,6 +25,10 @@ Hello 5 + 5 = 10
 %d	signed decimal integer
 
 %u	unsigned decimal integer
+```python
+>>> u'Hello\u0020Python ! '
+u'Hello Python ! '
+```
 
 %o	octal integer
 
