@@ -33,6 +33,18 @@ Hello 5 + 5 = 10
 ```
 
 **%d**	signed decimal integer
+```python
+>>> print("%d" % 100)
+100
+>>> print("%d" % 0b1111)
+15
+>>> print("%03d" % 1)
+001
+>>> print("%03d" % 100.111)
+100
+>>> print("%03d" % 10.111)
+010
+```
 
 **%u**	unsigned decimal integer
 ```python
