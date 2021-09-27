@@ -10,6 +10,11 @@ category: Tutorial
 %c	character
 
 %s	string conversion via str() prior to formatting
+```python
+>>> x = 'python'
+>>> print("Hello %s , %s to SharetoLearn!" %(x,"Welcome"))
+Hello python , Welcome to SharetoLearn!
+```
 
 %i	signed decimal integer
 
