@@ -69,8 +69,16 @@ C
 ```
 
 **%e**	exponential notation (with lowercase 'e')
+```python
+>>> '%e' % 1234567890
+'1.234568e+09'
+```
 
 **%E**	exponential notation (with UPPERcase 'E')
+```python
+>>> '%E' % 1234567890
+'1.234568E+09'
+```
 
 **%f**	floating point real number
 ```python
