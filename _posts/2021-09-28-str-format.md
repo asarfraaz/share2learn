@@ -30,3 +30,25 @@ category: Tutorial
 %g	the shorter of %f and %e
 
 %G	the shorter of %f and %E
+
+
+Other supported symbols in Python
+
+"*"	argument specifies width or precision
+	
+"-"	 left justification
+
+"+"	display the sign
+
+<sp>	leave a blank space before a positive number
+  
+"#"	add the octal leading zero ( '0' ) or hexadecimal leading '0x' or '0X', depending on whether 'x' or 'X' were used.
+  
+0	pad from left with zeros (instead of spaces)
+  
+"%"	'%%' leaves you with a single literal '%'
+  
+(var)	mapping variable (dictionary arguments)
+  
+m.n.	m is the minimum total width and n is the number of digits to display after the decimal point (if appl.)
+  
