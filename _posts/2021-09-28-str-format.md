@@ -112,23 +112,3 @@ Hello 5.100000 + 5.000000 = 10.000000
 1.234568E+00 | 1.234568 | 1.23457
 ```
 
-<h2>Other supported symbols in Python</h2>
-
-**"*"**	argument specifies width or precision
-	
-**"-"**	 left justification
-
-**"+"**	display the sign
-
-<sp>	leave a blank space before a positive number
-  
-**"#"**	add the octal leading zero ( '0' ) or hexadecimal leading '0x' or '0X', depending on whether 'x' or 'X' were used.
-  
-**0**	pad from left with zeros (instead of spaces)
-  
-"**%**"	'%%' leaves you with a single literal '%'
-  
-**(var)**	mapping variable (dictionary arguments)
-  
-**m.n.**	m is the minimum total width and n is the number of digits to display after the decimal point (if appl.)
-  
