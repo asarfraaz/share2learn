@@ -96,8 +96,8 @@ Hello 5.100000 + 5.000000 = 10.000000
 **%G**	the shorter of %f and %E
 ```python
 >>> x = 1.23456789
->>> print '%e | %f | %G' % (x, x, x)
-1.234568e+00 | 1.234568 | 1.23457
+>>> print '%E | %f | %G' % (x, x, x)
+1.234568E+00 | 1.234568 | 1.23457
 ```
 
 <h2>Other supported symbols in Python</h2>
