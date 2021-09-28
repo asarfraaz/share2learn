@@ -50,6 +50,8 @@ Hello 5 + 5 = 10
 ```python
 >>> u'Hello\u0020Python ! '
 u'Hello Python ! '
+>>> u'Hello\u0021Python'
+u'Hello!Python'
 ```
 
 **%o**	octal integer
