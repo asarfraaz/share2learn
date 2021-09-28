@@ -38,7 +38,7 @@ Hello 5 + 5 = 10
 100
 >>> print("%d" % 0b1111) #0b111 is binary value
 15
->>> print("%03d" % 1)
+>>> print("%03d" % 1) #padding" with zeroes is being done
 001
 >>> print("%03d" % 100.111)
 100
