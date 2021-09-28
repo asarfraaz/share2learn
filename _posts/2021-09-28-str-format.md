@@ -96,8 +96,8 @@ C
 
 **%f**	floating point real number
 ```python
->>> print("Hello %f + %f = %f" %(5.1,5,10))
-Hello 5.100000 + 5.000000 = 10.000000
+>>> >>> print("Hello %.2f + %.2f = %.3f" %(5.1,5,10))
+Hello 5.10 + 5.00 = 10.000
 ```
 
 **%g**	the shorter of %f and %e
