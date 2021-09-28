@@ -36,7 +36,7 @@ Hello 5 + 5 = 10
 ```python
 >>> print("%d" % 100)
 100
->>> print("%d" % 0b1111)
+>>> print("%d" % 0b1111) #0b111 is binary value
 15
 >>> print("%03d" % 1)
 001
