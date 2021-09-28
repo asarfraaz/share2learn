@@ -5,7 +5,7 @@ author: Arjun
 category: Tutorial
 ---
 
-<h2>Here is the list of complete set of symbols which can be used along with "%"</h2>
+## Here is the list of complete set of symbols which can be used along with "%"
 
 **%c** character
 ```python
