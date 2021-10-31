@@ -42,14 +42,69 @@ category: Tutorial
 ```
 
 **encode()**	Encodes strings with the specified encoded scheme
+```python
+>>> string
+'welcome to share to learn'
+>>> string.encode()
+b'welcome to share to learn'
+>>>
+>>> string.encode("ascii","ignore")
+b'welcome to share to learn'
+>>>
+>>> string.encode("ascii","replace")
+b'welcome to share to learn'
+>>>
+```
 
 **endswith()**	Returns “True” if a string ends with the given suffix
+```python
+>>> string
+'welcome to share to learn'
+>>>
+>>> string.endswith("n")
+True
+>>>
+>>>
+>>> string.endswith("l")
+False
+>>> string.endswith("to")
+False
+>>> string.endswith("learn")
+True
+>>>
+```
 
 **expandtabs()**	Specifies the amount of space to be substituted with the “\t” symbol in the string
+```python
+>>> str = "10\t20\t30"
+>>> str
+'10\t20\t30'
+>>> print(str)
+10	20	30
+>>> print(str.expandtabs(tabsize=15))
+10             20             30
+>>> str.expandtabs(tabsize=15)
+'10             20             30'
+```
 
 **find()**	Returns the lowest index of the substring if it is found
+```python
+>>> string = "welcome to share to learn"
+>>> string.find("share")
+11
+>>> string.find("to")
+8
+```
 
 **format()**	Formats the string for printing it to console
+```python
+>>> print("Welcome to {} to {}".format("Share","Learn"))
+Welcome to Share to Learn
+>>> print("Welcome to {0} to {1}".format("Share","Learn"))
+Welcome to Share to Learn
+>>> print("Welcome to {1} to {0}".format("Share","Learn"))
+Welcome to Learn to Share
+```
 
 **format_map()**	Formats specified values in a string using a dictionary
 
