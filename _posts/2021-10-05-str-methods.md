@@ -6,12 +6,40 @@ category: Tutorial
 ---
 
 **capitalize()**	Converts the first character of the string to a capital (uppercase) letter
+```python
+>>> string = "welcome to share to learn"
+>>> string.capitalize()
+'Welcome to share to learn'
+>>>
+```
 
 **casefold()**	Implements caseless string matching
+```python
+>>> string = "welcome to SHARE TO LEARN"
+>>> string.casefold()
+'welcome to share to learn'
+```
 
 **center()**	Pad the string with the specified character.
+```python
+>>> str.center(12,"-")
+'---Python---'
+>>>
+```
 
 **count()**	Returns the number of occurrences of a substring in the string.
+```python
+>>> string = "welcome to share to learn"
+>>>
+>>>
+>>> string.count("we")
+1
+>>> string.count("to")
+2
+>>> string.count("l")
+2
+>>>
+```
 
 **encode()**	Encodes strings with the specified encoded scheme
 
