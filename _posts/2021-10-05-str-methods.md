@@ -109,10 +109,51 @@ Welcome to Learn to Share
 **format_map()**	Formats specified values in a string using a dictionary
 
 **index()**	Returns the position of the first occurrence of a substring in a string
+```python
+>>> string
+'welcome to share to learn'
+>>> string.index("to")
+8
+>>>
+>>> string.index("t")
+8
+>>> string.index("o")
+4
+>>> string.index("learn")
+20
+>>>
+```
 
 **isalnum()**	Checks whether all the characters in a given string is alphanumeric or not
+```python
+>>> string
+'welcome to share to learn'
+>>> string.isalnum()
+False
+>>> str = "HelloPython123"
+>>> str.isalnum()
+True
+>>> str1 = " $ ***!"
+>>> str1.isalnum()
+False
+>>>
+```
 
 **isalpha()**	Returns “True” if all characters in the string are alphabets
+```python
+>>> str
+'HelloPython123'
+>>> str.isalpha()
+False
+>>> string
+'welcome to share to learn'
+>>> string.isalpha()
+False
+>>> str = "HelloPython"
+>>> str.isalpha()
+True
+>>>
+```
 
 **isdecimal()**	Returns true if all characters in a string are decimal
 
