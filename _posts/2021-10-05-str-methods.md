@@ -156,61 +156,160 @@ True
 ```
 
 **isdecimal()**	Returns true if all characters in a string are decimal
+```python
+>>> string
+'Welcome to Share to learn'
+>>> string.isdecimal()
+False
+>>> string1 = "500"
+>>> string1.isdecimal()
+True
+>>>
+```
 
 **isdigit()**	Returns “True” if all characters in the string are digits
+```python
+>>> string1 = "500"
+>>> string1.isdigit()
+True
+>>> string2 = "500.1"
+>>> string2.isdigit()
+False
+>>>
+```
 
 **isidentifier()**	Check whether a string is a valid identifier or not
+```python
+>>> string1
+'500'
+>>> string1.isidentifier()
+False
+>>> string2 = "user1"
+>>> string2.isidentifier()
+True
+>>>
+```
 
 **islower()**	Checks if all characters in the string are lowercase
+```python
+>>> string
+'Welcome to Share to learn'
+>>> string.islower()
+False
+>>> string1 = "welcome to share to learn"
+>>> string1.islower()
+True
+>>>
+```
 
 **isnumeric()**	Returns “True” if all characters in the string are numeric characters
+```python
+>>> string
+'Welcome to Share to learn'
+>>> string.isnumeric()
+False
+>>> string1 = "123456"
+>>> string1.isnumeric()
+True
+>>>
+```
 
 **isprintable()**	Returns “True” if all characters in the string are printable or the string is empty
+```python
+```
 
 **isspace()**	Returns “True” if all characters in the string are whitespace characters
+```python
+```
 
 **istitle()**	Returns “True” if the string is a title cased string
+```python
+```
 
 **isupper()**	Checks if all characters in the string are uppercase
+```python
+```
 
 **join()**	Returns a concatenated String
+```python
+```
 
 **ljust()**	Left aligns the string according to the width specified
+```python
+```
 
 **lower()**	Converts all uppercase characters in a string into lowercase
+```python
+```
 
 **lstrip()**	Returns the string with leading characters removed
+```python
+```
 
 **maketrans()**	 Returns a translation table
+```python
+```
 
 **partition()**	Splits the string at the first occurrence of the separator 
+```python
+```
 
 **replace()**	Replaces all occurrences of a substring with another substring
+```python
+```
 
 **rfind()**	Returns the highest index of the substring
+```python
+```
 
 **rindex()**	Returns the highest index of the substring inside the string
+```python
+```
 
 **rjust()**	Right aligns the string according to the width specified
+```python
+```
 
 **rpartition()**	Split the given string into three parts
+```python
+```
 
 **rsplit()**	Split the string from the right by the specified separator
+```python
+```
 
 **rstrip()**	Removes trailing characters
+```python
+```
 
 **splitlines()**	Split the lines at line boundaries
+```python
+```
 
 **startswith()**	Returns “True” if a string starts with the given prefix
+```python
+```
 
 **strip()**	Returns the string with both leading and trailing characters
+```python
+```
 
 **swapcase()**	Converts all uppercase characters to lowercase and vice versa
+```python
+```
 
 **title()**	Convert string to title case
+```python
+```
 
 **translate()**	Modify string according to given translation mappings
+```python
+```
 
 **upper()**	Converts all lowercase characters in a string into uppercase
+```python
+```
 
 **zfill()**	Returns a copy of the string with ‘0’ characters padded to the left side of the string
+```python
+```
