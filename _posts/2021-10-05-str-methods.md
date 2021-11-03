@@ -325,18 +325,40 @@ Python------
 
 **partition()**	Splits the string at the first occurrence of the separator 
 ```python
+>>> data
+'Welcome-to-sharetolearn'
+>>> data.partition("-")
+('Welcome', '-', 'to-sharetolearn')
+>>>
 ```
 
 **replace()**	Replaces all occurrences of a substring with another substring
 ```python
+>>> data
+'Hello Python'
+>>> data.replace("Hello","Bye")
+'Bye Python'
+>>>
 ```
 
 **rfind()**	Returns the highest index of the substring
 ```python
+>>> mystr
+'Hello-Python'
+>>> mystr.rfind("P")
+6
+>>>
 ```
 
 **rindex()**	Returns the highest index of the substring inside the string
 ```python
+>>> string
+'Welcome to Share to learn'
+>>> string.rindex("S")
+11
+>>> string.rindex("l")
+20
+>>>
 ```
 
 **rjust()**	Right aligns the string according to the width specified
