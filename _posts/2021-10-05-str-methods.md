@@ -233,34 +233,94 @@ False
 
 **isspace()**	Returns “True” if all characters in the string are whitespace characters
 ```python
+>>> string
+'Welcome to Share to learn'
+>>> string.isspace()
+False
+>>> str = "\t"
+>>> str.isspace()
+True
+>>>
 ```
 
 **istitle()**	Returns “True” if the string is a title cased string
 ```python
+>>> string
+'Welcome to Share to learn'
+>>> string.istitle()
+False
+>>> string1
+'500'
+>>> string1.istitle()
+False
+>>> str
+'\t'
+>>> str.istitle()
+False
+>>> str1 = "Python"
+>>> str1.istitle()
+True
+>>>
 ```
 
 **isupper()**	Checks if all characters in the string are uppercase
 ```python
+>>> string
+'Welcome to Share to learn'
+>>> string.isupper()
+False
+>>> STR = "HELLO THERE"
+>>> STR.isupper()
+True
+>>>
 ```
 
 **join()**	Returns a concatenated String
 ```python
+>>> a = "-"
+>>> print(a.join("123"))
+1-2-3
+>>>
+>>> a = "##"
+>>> print(a.join("HELLO"))
+H##E##L##L##O
+>>>
 ```
 
 **ljust()**	Left aligns the string according to the width specified
 ```python
+>>> str = "Python"
+>>> a = str.ljust(12, "-")
+>>> print(a)
+Python------
+>>>
 ```
 
 **lower()**	Converts all uppercase characters in a string into lowercase
 ```python
+>>> string
+'Welcome to Share to learn'
+>>> string.lower()
+'welcome to share to learn'
+>>> STR
+'HELLO THERE'
+>>> STR.lower()
+'hello there'
+>>>
 ```
 
 **lstrip()**	Returns the string with leading characters removed
 ```python
+>>> aa
+'   Python  '
+>>> aa.lstrip()
+'Python  '
+>>>
 ```
 
 **maketrans()**	 Returns a translation table
 ```python
+
 ```
 
 **partition()**	Splits the string at the first occurrence of the separator 
@@ -293,6 +353,11 @@ False
 
 **rstrip()**	Removes trailing characters
 ```python
+>>> aa
+'   Python  '
+>>> aa.rstrip()
+'   Python'
+>>>
 ```
 
 **splitlines()**	Split the lines at line boundaries
