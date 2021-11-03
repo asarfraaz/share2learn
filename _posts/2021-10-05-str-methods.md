@@ -216,6 +216,19 @@ True
 
 **isprintable()**	Returns “True” if all characters in the string are printable or the string is empty
 ```python
+>>> string
+'Welcome to Share to learn'
+>>> string.isprintable()
+True
+>>> string1
+'500'
+>>> string1.isprintable()
+True
+>>> string2
+'\t'
+>>> string2.isprintable()
+False
+>>>
 ```
 
 **isspace()**	Returns “True” if all characters in the string are whitespace characters
