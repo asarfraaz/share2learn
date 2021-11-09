@@ -107,6 +107,23 @@ Welcome to Learn to Share
 ```
 
 **format_map()**	Formats specified values in a string using a dictionary
+```python
+>>> lunch = {"Food":
+"Pizza", "Drink": "Wine"}
+>>> print("Lunch: {Food},
+{Drink}".format_map(lunch))
+Lunch: Pizza, Wine
+>>> class Default(dict):
+def __missing__(self,
+key):
+return key
+>>> lunch = {"Drink":
+"Wine"}
+>>> print("Lunch: {Food},
+{Drink}".format_map(Default(
+lunch)))
+Lunch: Food, Wine
+```
 
 **index()**	Returns the position of the first occurrence of a substring in a string
 ```python
@@ -363,14 +380,35 @@ Python------
 
 **rjust()**	Right aligns the string according to the width specified
 ```python
+>>> sentence = "Hello Python"
+>>> sentence1 = mystr.rjust(20,
+"-")
+>>> print(sentence1)
+--------Hello Python
 ```
 
 **rpartition()**	Split the given string into three parts
 ```python
+>>> sentence = "Hello Python"
+>>>
+print(sentence.rpartition("."))
+('', '', 'Hello Python')
+>>> print(sentence.rpartition("
+"))
+('Hello', ' ', 'Python')
 ```
 
 **rsplit()**	Split the string from the right by the specified separator
 ```python
+>>> sentence = "Hello Python"
+>>> print(sentence.rsplit())
+['Hello', 'Python']
+>>> sentence = "Hello-Python-
+Hello"
+>>>
+print(sentence.rsplit(sep="-",
+maxsplit=1))
+['Hello-Python', 'Hello']
 ```
 
 **rstrip()**	Removes trailing characters
@@ -431,6 +469,14 @@ False
 
 **translate()**	Modify string according to given translation mappings
 ```python
+>>> frm = "helloPython"
+>>> to = "40250666333"
+>>> trans_table =
+str.maketrans(frm, to)
+>>> secret_code = "Secret
+Code".translate(trans_table)
+>>> print(secret_code)
+S0cr06 C3d0
 ```
 
 **upper()**	Converts all lowercase characters in a string into uppercase
