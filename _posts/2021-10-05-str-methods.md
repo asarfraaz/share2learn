@@ -76,14 +76,14 @@ True
 
 **expandtabs()**	Specifies the amount of space to be substituted with the “\t” symbol in the string
 ```python
->>> str = "10\t20\t30"
->>> str
+>>> sentence = "10\t20\t30"
+>>> sentence
 '10\t20\t30'
->>> print(str)
+>>> print(sentence)
 10	20	30
->>> print(str.expandtabs(tabsize=15))
+>>> print(sentence.expandtabs(tabsize=15))
 10             20             30
->>> str.expandtabs(tabsize=15)
+>>> sentence.expandtabs(tabsize=15)
 '10             20             30'
 ```
 
@@ -130,27 +130,27 @@ Welcome to Learn to Share
 'welcome to share to learn'
 >>> string.isalnum()
 False
->>> str = "HelloPython123"
->>> str.isalnum()
+>>> sentence = "HelloPython123"
+>>> sentence.isalnum()
 True
->>> str1 = " $ ***!"
->>> str1.isalnum()
+>>> sentence1 = " $ ***!"
+>>> sentence1.isalnum()
 False
 >>>
 ```
 
 **isalpha()**	Returns “True” if all characters in the string are alphabets
 ```python
->>> str
+>>> sentence
 'HelloPython123'
->>> str.isalpha()
+>>> sentence.isalpha()
 False
->>> string
+>>> sentence1
 'welcome to share to learn'
->>> string.isalpha()
+>>> sentence1.isalpha()
 False
->>> str = "HelloPython"
->>> str.isalpha()
+>>> sentence = "HelloPython"
+>>> sentence.isalpha()
 True
 >>>
 ```
@@ -237,8 +237,8 @@ False
 'Welcome to Share to learn'
 >>> string.isspace()
 False
->>> str = "\t"
->>> str.isspace()
+>>> sentence = "\t"
+>>> sentence.isspace()
 True
 >>>
 ```
@@ -253,12 +253,12 @@ False
 '500'
 >>> string1.istitle()
 False
->>> str
+>>> sentence
 '\t'
->>> str.istitle()
+>>> sentence.istitle()
 False
->>> str1 = "Python"
->>> str1.istitle()
+>>> sentence1 = "Python"
+>>> sentence1.istitle()
 True
 >>>
 ```
@@ -269,8 +269,8 @@ True
 'Welcome to Share to learn'
 >>> string.isupper()
 False
->>> STR = "HELLO THERE"
->>> STR.isupper()
+>>> sentence = "HELLO THERE"
+>>> sentence.isupper()
 True
 >>>
 ```
@@ -289,8 +289,8 @@ H##E##L##L##O
 
 **ljust()**	Left aligns the string according to the width specified
 ```python
->>> str = "Python"
->>> a = str.ljust(12, "-")
+>>> sentence = "Python"
+>>> a = sentence.ljust(12, "-")
 >>> print(a)
 Python------
 >>>
@@ -298,22 +298,22 @@ Python------
 
 **lower()**	Converts all uppercase characters in a string into lowercase
 ```python
->>> string
+>>> sentence
 'Welcome to Share to learn'
->>> string.lower()
+>>> sentence.lower()
 'welcome to share to learn'
->>> STR
+>>> sentence1
 'HELLO THERE'
->>> STR.lower()
+>>> sentence1.lower()
 'hello there'
 >>>
 ```
 
 **lstrip()**	Returns the string with leading characters removed
 ```python
->>> aa
+>>> sentence
 '   Python  '
->>> aa.lstrip()
+>>> sentence.lstrip()
 'Python  '
 >>>
 ```
@@ -343,9 +343,9 @@ Python------
 
 **rfind()**	Returns the highest index of the substring
 ```python
->>> mystr
+>>> sentence
 'Hello-Python'
->>> mystr.rfind("P")
+>>> sentence.rfind("P")
 6
 >>>
 ```
@@ -375,31 +375,58 @@ Python------
 
 **rstrip()**	Removes trailing characters
 ```python
->>> aa
+>>> sentence
 '   Python  '
->>> aa.rstrip()
+>>> sentence.rstrip()
 '   Python'
 >>>
 ```
 
 **splitlines()**	Split the lines at line boundaries
 ```python
+>>> sentence = '''
+... Welcome to Share to Learn
+... Happy Learning
+... '''
+>>> sentence
+'\nWelcome to Share to Learn\nHappy Learning\n'
+>>> sentence.splitlines()
+['', 'Welcome to Share to Learn', 'Happy Learning']
+>>>
 ```
 
 **startswith()**	Returns “True” if a string starts with the given prefix
 ```python
+>>> sentence = "Welcome to Share to Learn"
+>>> sentence.startswith("W")
+True
+>>> sentence.startswith("w")
+False
+>>> sentence.startswith("s")
+False
+>>>
 ```
 
 **strip()**	Returns the string with both leading and trailing characters
 ```python
+>>> sentence = "  Welcome to Share to Learn  "
+>>> sentence.strip()
+'Welcome to Share to Learn'
+>>>
 ```
 
 **swapcase()**	Converts all uppercase characters to lowercase and vice versa
 ```python
+>>> sentence = "Welcome to Share to Learn"
+>>> sentence.swapcase()
+'wELCOME TO sHARE TO lEARN'
 ```
 
 **title()**	Convert string to title case
 ```python
+>>> sentence = 'wELCOME TO sHARE TO lEARN'
+>>> sentence.title()
+'Welcome To Share To Learn'
 ```
 
 **translate()**	Modify string according to given translation mappings
@@ -408,8 +435,17 @@ Python------
 
 **upper()**	Converts all lowercase characters in a string into uppercase
 ```python
+>>> sentence = "welcome to python"
+>>> sentence.upper()
+'WELCOME TO PYTHON'
 ```
 
 **zfill()**	Returns a copy of the string with ‘0’ characters padded to the left side of the string
 ```python
+>>> sentence = "1234"
+>>> sentence.zfill(5)
+'01234'
+>>> sentence.zfill(9)
+'000001234'
+>>>
 ```
