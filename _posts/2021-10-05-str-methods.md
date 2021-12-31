@@ -393,8 +393,7 @@ Python------
 >>>
 print(sentence.rpartition("."))
 ('', '', 'Hello Python')
->>> print(sentence.rpartition("
-"))
+>>> print(sentence.rpartition(" "))
 ('Hello', ' ', 'Python')
 ```
 
@@ -403,11 +402,9 @@ print(sentence.rpartition("."))
 >>> sentence = "Hello Python"
 >>> print(sentence.rsplit())
 ['Hello', 'Python']
->>> sentence = "Hello-Python-
-Hello"
+>>> sentence = "Hello-Python-Hello"
 >>>
-print(sentence.rsplit(sep="-",
-maxsplit=1))
+print(sentence.rsplit(sep="-", maxsplit=1))
 ['Hello-Python', 'Hello']
 ```
 
@@ -418,14 +415,20 @@ maxsplit=1))
 >>> sentence.rstrip()
 '   Python'
 >>>
+>>> win_msg = "** We Won!!! **"
+>>> win_msg
+'** We Won!!! **'
+>>> sentence.rstrip('*')
+' We Won!!! '
+>>>
 ```
 
 **splitlines()**	Split the lines at line boundaries
 ```python
 >>> sentence = '''
-... Welcome to Share to Learn
-... Happy Learning
-... '''
+    Welcome to Share to Learn
+    Happy Learning
+'''
 >>> sentence
 '\nWelcome to Share to Learn\nHappy Learning\n'
 >>> sentence.splitlines()
@@ -462,6 +465,14 @@ False
 
 **title()**	Convert string to title case
 ```python
+>>> sentence = 'WELCOME TO SHARE TO LEARN'
+>>> sentence.title()
+'Welcome To Share To Learn'
+
+>>> sentence = 'welcome to share to learn'
+>>> sentence.title()
+'Welcome To Share To Learn'
+
 >>> sentence = 'wELCOME TO sHARE TO lEARN'
 >>> sentence.title()
 'Welcome To Share To Learn'
@@ -473,8 +484,7 @@ False
 >>> to = "40250666333"
 >>> trans_table =
 str.maketrans(frm, to)
->>> secret_code = "Secret
-Code".translate(trans_table)
+>>> secret_code = "Secret Code".translate(trans_table)
 >>> print(secret_code)
 S0cr06 C3d0
 ```
