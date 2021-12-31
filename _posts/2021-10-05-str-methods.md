@@ -5,6 +5,13 @@ author: Arjun
 category: Tutorial
 ---
 
+## List of String Methods mentioned in this post
+
+**[1. capitalize()](#capitalize)**
+
+---
+
+<div id="capitalize"/>
 **capitalize()**	Converts the first character of the string to a capital (uppercase) letter
 ```python
 >>> string = "welcome to share to learn"
