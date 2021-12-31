@@ -7,11 +7,13 @@ category: Tutorial
 
 ## List of String Methods mentioned in this post
 
-**[1. capitalize()](#capitalize)**
+1. [capitalize()](#capitalize)
+1. [casefold()](#casefold)
 
 ---
 
 <div id="capitalize"/>
+
 **capitalize()**	Converts the first character of the string to a capital (uppercase) letter
 ```python
 >>> string = "welcome to share to learn"
@@ -19,6 +21,8 @@ category: Tutorial
 'Welcome to share to learn'
 >>>
 ```
+
+<div id="casefold"/>
 
 **casefold()**	Implements caseless string matching
 ```python
