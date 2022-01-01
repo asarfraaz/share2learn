@@ -9,6 +9,15 @@ category: Tutorial
 
 1. [capitalize()](#capitalize)
 1. [casefold()](#casefold)
+2. [center()](#center)
+3. [count()](#count)
+4. [encode()](#encode)
+5. [endswith()](#endswith)
+6. [expandtabs()](#expandtabs)
+7. [find()](#find)
+8. [format()](#format)
+9. [format_map()](#format_map)
+10. [index()](#index)
 
 ---
 
@@ -31,12 +40,16 @@ category: Tutorial
 'welcome to share to learn'
 ```
 
+<div id="center"/>
+
 **center()**	Pad the string with the specified character.
 ```python
 >>> str.center(12,"-")
 '---Python---'
 >>>
 ```
+
+<div id="count"/>
 
 **count()**	Returns the number of occurrences of a substring in the string.
 ```python
@@ -52,6 +65,8 @@ category: Tutorial
 >>>
 ```
 
+<div id="encode"/>
+
 **encode()**	Encodes strings with the specified encoded scheme
 ```python
 >>> string
@@ -66,6 +81,8 @@ b'welcome to share to learn'
 b'welcome to share to learn'
 >>>
 ```
+
+<div id="endswith"/>
 
 **endswith()**	Returns “True” if a string ends with the given suffix
 ```python
@@ -85,6 +102,8 @@ True
 >>>
 ```
 
+<div id="expandtabs"/>
+
 **expandtabs()**	Specifies the amount of space to be substituted with the “\t” symbol in the string
 ```python
 >>> sentence = "10\t20\t30"
@@ -98,6 +117,8 @@ True
 '10             20             30'
 ```
 
+<div id="find"/>
+
 **find()**	Returns the lowest index of the substring if it is found
 ```python
 >>> string = "welcome to share to learn"
@@ -106,6 +127,8 @@ True
 >>> string.find("to")
 8
 ```
+
+<div id="format"/>
 
 **format()**	Formats the string for printing it to console
 ```python
@@ -117,24 +140,24 @@ Welcome to Share to Learn
 Welcome to Learn to Share
 ```
 
+<div id="format_map"/>
+
 **format_map()**	Formats specified values in a string using a dictionary
 ```python
->>> lunch = {"Food":
-"Pizza", "Drink": "Wine"}
->>> print("Lunch: {Food},
-{Drink}".format_map(lunch))
-Lunch: Pizza, Wine
+>>> lunch = {
+            "Food": "Pizza", 
+            "Drink": "Juice"}
+>>> print("Lunch: {Food}, {Drink}".format_map(lunch))
+Lunch: Pizza, Juice
 >>> class Default(dict):
-def __missing__(self,
-key):
-return key
->>> lunch = {"Drink":
-"Wine"}
->>> print("Lunch: {Food},
-{Drink}".format_map(Default(
-lunch)))
-Lunch: Food, Wine
+        def __missing__(self, key):
+            return key
+>>> lunch = {"Drink": "Juice"}
+>>> print("Lunch: {Food},{Drink}".format_map(Default(lunch)))
+Lunch: Food, Juice
 ```
+
+<div id="index"/>
 
 **index()**	Returns the position of the first occurrence of a substring in a string
 ```python
