@@ -18,6 +18,39 @@ category: Tutorial
 8. [format()](#format)
 9. [format_map()](#format_map)
 10. [index()](#index)
+11. [isalnum()](#isalnum)
+12. [isalpha()](#isalpha)
+13. [isdecimal()](#isdecimal)
+14. [isdigit()](#isdigit)
+15. [isidentifier()](#isidentifier)
+16. [islower()](#islower)
+17. [isnumeric()](#isnumeric)
+18. [isprintable()](#isprintable)
+19. [isspace()](#isspace)
+20. [istitle()](#istitle)
+21. [isupper()](#isupper)
+22. [join()](#join)
+23. [ljust()](#ljust)
+24. [lower()](#lower)
+25. [lstrip()](#lstrip)
+26. [maketrans()](#maketrans)
+27. [partition()](#partition)
+28. [replace()](#replace)
+29. [rfind()](#rfind)
+30. [rindex()](#rindex)
+31. [rjust()](#rjust)
+32. [rpartition()](#rpartition)
+33. [rsplit()](#rsplit)
+34. [rstrip()](#rstrip)
+35. [splitlines()](#splitlines)
+36. [startswith()](#startswith)
+37. [strip()](#strip)
+38. [swapcase()](#swapcase)
+39. [title()](#title)
+40. [translate()](#translate)
+41. [upper()](#upper)
+42. [zfill()](#zfill)
+
 
 ---
 
@@ -175,6 +208,8 @@ Lunch: Food, Juice
 >>>
 ```
 
+<div id="isalnum"/>
+
 **isalnum()**	Checks whether all the characters in a given string is alphanumeric or not
 ```python
 >>> string
@@ -189,6 +224,8 @@ True
 False
 >>>
 ```
+
+<div id="isalpha"/>
 
 **isalpha()**	Returns “True” if all characters in the string are alphabets
 ```python
@@ -206,6 +243,8 @@ True
 >>>
 ```
 
+<div id="isdecimal"/>
+
 **isdecimal()**	Returns true if all characters in a string are decimal
 ```python
 >>> string
@@ -218,6 +257,8 @@ True
 >>>
 ```
 
+<div id="isdigit"/>
+
 **isdigit()**	Returns “True” if all characters in the string are digits
 ```python
 >>> string1 = "500"
@@ -228,6 +269,8 @@ True
 False
 >>>
 ```
+
+<div id="isidentifier"/>
 
 **isidentifier()**	Check whether a string is a valid identifier or not
 ```python
@@ -241,6 +284,8 @@ True
 >>>
 ```
 
+<div id="islower"/>
+
 **islower()**	Checks if all characters in the string are lowercase
 ```python
 >>> string
@@ -253,6 +298,8 @@ True
 >>>
 ```
 
+<div id="isnumeric"/>
+
 **isnumeric()**	Returns “True” if all characters in the string are numeric characters
 ```python
 >>> string
@@ -264,6 +311,8 @@ False
 True
 >>>
 ```
+
+<div id="isprintable"/>
 
 **isprintable()**	Returns “True” if all characters in the string are printable or the string is empty
 ```python
@@ -282,6 +331,8 @@ False
 >>>
 ```
 
+<div id="isspace"/>
+
 **isspace()**	Returns “True” if all characters in the string are whitespace characters
 ```python
 >>> string
@@ -293,6 +344,8 @@ False
 True
 >>>
 ```
+
+<div id="istitle"/>
 
 **istitle()**	Returns “True” if the string is a title cased string
 ```python
@@ -314,6 +367,8 @@ True
 >>>
 ```
 
+<div id="isupper"/>
+
 **isupper()**	Checks if all characters in the string are uppercase
 ```python
 >>> string
@@ -325,6 +380,8 @@ False
 True
 >>>
 ```
+
+<div id="join"/>
 
 **join()**	Returns a concatenated String
 ```python
@@ -338,6 +395,8 @@ H##E##L##L##O
 >>>
 ```
 
+<div id="ljust"/>
+
 **ljust()**	Left aligns the string according to the width specified
 ```python
 >>> sentence = "Python"
@@ -346,6 +405,8 @@ H##E##L##L##O
 Python------
 >>>
 ```
+
+<div id="lower"/>
 
 **lower()**	Converts all uppercase characters in a string into lowercase
 ```python
@@ -360,6 +421,8 @@ Python------
 >>>
 ```
 
+<div id="lstrip"/>
+
 **lstrip()**	Returns the string with leading characters removed
 ```python
 >>> sentence
@@ -369,10 +432,14 @@ Python------
 >>>
 ```
 
+<div id="maketrans"/>
+
 **maketrans()**	 Returns a translation table
 ```python
 
 ```
+
+<div id="partition"/>
 
 **partition()**	Splits the string at the first occurrence of the separator 
 ```python
@@ -383,6 +450,8 @@ Python------
 >>>
 ```
 
+<div id="replace"/>
+
 **replace()**	Replaces all occurrences of a substring with another substring
 ```python
 >>> data
@@ -392,6 +461,8 @@ Python------
 >>>
 ```
 
+<div id="rfind"/>
+
 **rfind()**	Returns the highest index of the substring
 ```python
 >>> sentence
@@ -400,6 +471,8 @@ Python------
 6
 >>>
 ```
+
+<div id="rindex"/>
 
 **rindex()**	Returns the highest index of the substring inside the string
 ```python
@@ -412,6 +485,8 @@ Python------
 >>>
 ```
 
+<div id="rjust"/>
+
 **rjust()**	Right aligns the string according to the width specified
 ```python
 >>> sentence = "Hello Python"
@@ -420,6 +495,8 @@ Python------
 >>> print(sentence1)
 --------Hello Python
 ```
+
+<div id="rpartition"/>
 
 **rpartition()**	Split the given string into three parts
 ```python
@@ -431,6 +508,8 @@ print(sentence.rpartition("."))
 ('Hello', ' ', 'Python')
 ```
 
+<div id="rsplit"/>
+
 **rsplit()**	Split the string from the right by the specified separator
 ```python
 >>> sentence = "Hello Python"
@@ -441,6 +520,8 @@ print(sentence.rpartition("."))
 print(sentence.rsplit(sep="-", maxsplit=1))
 ['Hello-Python', 'Hello']
 ```
+
+<div id="rstrip"/>
 
 **rstrip()**	Removes trailing characters
 ```python
@@ -457,6 +538,8 @@ print(sentence.rsplit(sep="-", maxsplit=1))
 >>>
 ```
 
+<div id="splitlines"/>
+
 **splitlines()**	Split the lines at line boundaries
 ```python
 >>> sentence = '''
@@ -470,6 +553,8 @@ print(sentence.rsplit(sep="-", maxsplit=1))
 >>>
 ```
 
+<div id="startswith"/>
+
 **startswith()**	Returns “True” if a string starts with the given prefix
 ```python
 >>> sentence = "Welcome to Share to Learn"
@@ -482,6 +567,8 @@ False
 >>>
 ```
 
+<div id="strip"/>
+
 **strip()**	Returns the string with both leading and trailing characters
 ```python
 >>> sentence = "  Welcome to Share to Learn  "
@@ -490,12 +577,16 @@ False
 >>>
 ```
 
+<div id="swapcase"/>
+
 **swapcase()**	Converts all uppercase characters to lowercase and vice versa
 ```python
 >>> sentence = "Welcome to Share to Learn"
 >>> sentence.swapcase()
 'wELCOME TO sHARE TO lEARN'
 ```
+
+<div id="title"/>
 
 **title()**	Convert string to title case
 ```python
@@ -512,6 +603,8 @@ False
 'Welcome To Share To Learn'
 ```
 
+<div id="translate"/>
+
 **translate()**	Modify string according to given translation mappings
 ```python
 >>> frm = "helloPython"
@@ -523,12 +616,16 @@ str.maketrans(frm, to)
 S0cr06 C3d0
 ```
 
+<div id="upper"/>
+
 **upper()**	Converts all lowercase characters in a string into uppercase
 ```python
 >>> sentence = "welcome to python"
 >>> sentence.upper()
 'WELCOME TO PYTHON'
 ```
+
+<div id="zfill"/>
 
 **zfill()**	Returns a copy of the string with ‘0’ characters padded to the left side of the string
 ```python
