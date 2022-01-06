@@ -182,12 +182,23 @@ Welcome to Learn to Share
             "Drink": "Juice"}
 >>> print("Lunch: {Food}, {Drink}".format_map(lunch))
 Lunch: Pizza, Juice
+
+>>> print("Lunch: {Food}, {Drink} and {dessert}".format_map(lunch))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'dessert'
+
 >>> class Default(dict):
         def __missing__(self, key):
+            '''
+                To handle KeyError, when key is not present in dictionary
+            '''
             return key
->>> lunch = {"Drink": "Juice"}
->>> print("Lunch: {Food},{Drink}".format_map(Default(lunch)))
-Lunch: Food, Juice
+            
+>>> print("Lunch: {Food}, {Drink} and {dessert}".format_map(Default(lunch)))
+Lunch: Food, Juice and dessert
+>>> # Notice that we passed "Default(lunch)" to format_map and not just "lunch"
+
 ```
 
 <div id="index"/>
