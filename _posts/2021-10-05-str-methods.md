@@ -5,6 +5,28 @@ author: Arjun
 category: Tutorial
 ---
 
+## List of String Methods mentioned in this post
+
+<div align="center">
+
+| | | | | | 
+| - | - | - | - | - |
+| 1. [capitalize()](#capitalize) | 2. [casefold()](#casefold) | 3. [center()](#center) | 4. [count()](#count) | 5. [encode()](#encode) | 
+| 6. [endswith()](#endswith)| 7. [expandtabs()](#expandtabs) | 8. [find()](#find) | 9. [format()](#format) | 10. [format_map()](#format_map) |
+| 11. [index()](#index) | 12. [isalnum()](#isalnum) | 13. [isalpha()](#isalpha) | 14. [isdecimal()](#isdecimal) | 15. [isdigit()](#isdigit) |
+| 16. [isidentifier()](#isidentifier) | 17. [islower()](#islower)| 18. [isnumeric()](#isnumeric) | 19. [isprintable()](#isprintable) | 20. [isspace()](#isspace) |
+| 21. [istitle()](#istitle) | 22. [isupper()](#isupper) | 23. [join()](#join) | 24. [ljust()](#ljust) | 25. [lower()](#lower) |
+| 26. [lstrip()](#lstrip)| 27. [maketrans()](#maketrans)| 28. [partition()](#partition)| 29. [replace()](#replace)| 30. [rfind()](#rfind)
+| 31. [rindex()](#rindex)| 32. [rjust()](#rjust)| 33. [rpartition()](#rpartition)| 34. [rsplit()](#rsplit)| 35. [rstrip()](#rstrip)| 
+| 36. [splitlines()](#splitlines)| 37. [startswith()](#startswith)| 38. [strip()](#strip) | 39. [swapcase()](#swapcase) | 40. [title()](#title) | 
+| 41. [translate()](#translate) | |            42. [upper()](#upper) | | 43. [zfill()](#zfill) |
+
+</div>
+
+---
+
+<div id="capitalize"/>
+
 **capitalize()**	Converts the first character of the string to a capital (uppercase) letter
 ```python
 >>> string = "welcome to share to learn"
@@ -13,6 +35,8 @@ category: Tutorial
 >>>
 ```
 
+<div id="casefold"/>
+
 **casefold()**	Implements caseless string matching
 ```python
 >>> string = "welcome to SHARE TO LEARN"
@@ -20,12 +44,16 @@ category: Tutorial
 'welcome to share to learn'
 ```
 
+<div id="center"/>
+
 **center()**	Pad the string with the specified character.
 ```python
 >>> str.center(12,"-")
 '---Python---'
 >>>
 ```
+
+<div id="count"/>
 
 **count()**	Returns the number of occurrences of a substring in the string.
 ```python
@@ -41,6 +69,8 @@ category: Tutorial
 >>>
 ```
 
+<div id="encode"/>
+
 **encode()**	Encodes strings with the specified encoded scheme
 ```python
 >>> string
@@ -55,6 +85,8 @@ b'welcome to share to learn'
 b'welcome to share to learn'
 >>>
 ```
+
+<div id="endswith"/>
 
 **endswith()**	Returns “True” if a string ends with the given suffix
 ```python
@@ -74,6 +106,8 @@ True
 >>>
 ```
 
+<div id="expandtabs"/>
+
 **expandtabs()**	Specifies the amount of space to be substituted with the “\t” symbol in the string
 ```python
 >>> sentence = "10\t20\t30"
@@ -87,6 +121,8 @@ True
 '10             20             30'
 ```
 
+<div id="find"/>
+
 **find()**	Returns the lowest index of the substring if it is found
 ```python
 >>> string = "welcome to share to learn"
@@ -95,6 +131,8 @@ True
 >>> string.find("to")
 8
 ```
+
+<div id="format"/>
 
 **format()**	Formats the string for printing it to console
 ```python
@@ -106,24 +144,35 @@ Welcome to Share to Learn
 Welcome to Learn to Share
 ```
 
+<div id="format_map"/>
+
 **format_map()**	Formats specified values in a string using a dictionary
 ```python
->>> lunch = {"Food":
-"Pizza", "Drink": "Wine"}
->>> print("Lunch: {Food},
-{Drink}".format_map(lunch))
-Lunch: Pizza, Wine
+>>> lunch = {
+            "Food": "Pizza", 
+            "Drink": "Juice"}
+>>> print("Lunch: {Food}, {Drink}".format_map(lunch))
+Lunch: Pizza, Juice
+
+>>> print("Lunch: {Food}, {Drink} and {dessert}".format_map(lunch))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'dessert'
+
 >>> class Default(dict):
-def __missing__(self,
-key):
-return key
->>> lunch = {"Drink":
-"Wine"}
->>> print("Lunch: {Food},
-{Drink}".format_map(Default(
-lunch)))
-Lunch: Food, Wine
+        def __missing__(self, key):
+            '''
+                To handle KeyError, when key is not present in dictionary
+            '''
+            return key
+            
+>>> print("Lunch: {Food}, {Drink} and {dessert}".format_map(Default(lunch)))
+Lunch: Food, Juice and dessert
+>>> # Notice that we passed "Default(lunch)" to format_map and not just "lunch"
+
 ```
+
+<div id="index"/>
 
 **index()**	Returns the position of the first occurrence of a substring in a string
 ```python
@@ -141,6 +190,8 @@ Lunch: Food, Wine
 >>>
 ```
 
+<div id="isalnum"/>
+
 **isalnum()**	Checks whether all the characters in a given string is alphanumeric or not
 ```python
 >>> string
@@ -155,6 +206,8 @@ True
 False
 >>>
 ```
+
+<div id="isalpha"/>
 
 **isalpha()**	Returns “True” if all characters in the string are alphabets
 ```python
@@ -172,6 +225,8 @@ True
 >>>
 ```
 
+<div id="isdecimal"/>
+
 **isdecimal()**	Returns true if all characters in a string are decimal
 ```python
 >>> string
@@ -184,6 +239,8 @@ True
 >>>
 ```
 
+<div id="isdigit"/>
+
 **isdigit()**	Returns “True” if all characters in the string are digits
 ```python
 >>> string1 = "500"
@@ -194,6 +251,8 @@ True
 False
 >>>
 ```
+
+<div id="isidentifier"/>
 
 **isidentifier()**	Check whether a string is a valid identifier or not
 ```python
@@ -207,6 +266,8 @@ True
 >>>
 ```
 
+<div id="islower"/>
+
 **islower()**	Checks if all characters in the string are lowercase
 ```python
 >>> string
@@ -219,6 +280,8 @@ True
 >>>
 ```
 
+<div id="isnumeric"/>
+
 **isnumeric()**	Returns “True” if all characters in the string are numeric characters
 ```python
 >>> string
@@ -230,6 +293,8 @@ False
 True
 >>>
 ```
+
+<div id="isprintable"/>
 
 **isprintable()**	Returns “True” if all characters in the string are printable or the string is empty
 ```python
@@ -248,6 +313,8 @@ False
 >>>
 ```
 
+<div id="isspace"/>
+
 **isspace()**	Returns “True” if all characters in the string are whitespace characters
 ```python
 >>> string
@@ -259,6 +326,8 @@ False
 True
 >>>
 ```
+
+<div id="istitle"/>
 
 **istitle()**	Returns “True” if the string is a title cased string
 ```python
@@ -280,6 +349,8 @@ True
 >>>
 ```
 
+<div id="isupper"/>
+
 **isupper()**	Checks if all characters in the string are uppercase
 ```python
 >>> string
@@ -291,6 +362,8 @@ False
 True
 >>>
 ```
+
+<div id="join"/>
 
 **join()**	Returns a concatenated String
 ```python
@@ -304,6 +377,8 @@ H##E##L##L##O
 >>>
 ```
 
+<div id="ljust"/>
+
 **ljust()**	Left aligns the string according to the width specified
 ```python
 >>> sentence = "Python"
@@ -312,6 +387,8 @@ H##E##L##L##O
 Python------
 >>>
 ```
+
+<div id="lower"/>
 
 **lower()**	Converts all uppercase characters in a string into lowercase
 ```python
@@ -326,6 +403,8 @@ Python------
 >>>
 ```
 
+<div id="lstrip"/>
+
 **lstrip()**	Returns the string with leading characters removed
 ```python
 >>> sentence
@@ -335,10 +414,14 @@ Python------
 >>>
 ```
 
+<div id="maketrans"/>
+
 **maketrans()**	 Returns a translation table
 ```python
 
 ```
+
+<div id="partition"/>
 
 **partition()**	Splits the string at the first occurrence of the separator 
 ```python
@@ -349,6 +432,8 @@ Python------
 >>>
 ```
 
+<div id="replace"/>
+
 **replace()**	Replaces all occurrences of a substring with another substring
 ```python
 >>> data
@@ -358,6 +443,8 @@ Python------
 >>>
 ```
 
+<div id="rfind"/>
+
 **rfind()**	Returns the highest index of the substring
 ```python
 >>> sentence
@@ -366,6 +453,8 @@ Python------
 6
 >>>
 ```
+
+<div id="rindex"/>
 
 **rindex()**	Returns the highest index of the substring inside the string
 ```python
@@ -378,6 +467,8 @@ Python------
 >>>
 ```
 
+<div id="rjust"/>
+
 **rjust()**	Right aligns the string according to the width specified
 ```python
 >>> sentence = "Hello Python"
@@ -387,29 +478,32 @@ Python------
 --------Hello Python
 ```
 
+<div id="rpartition"/>
+
 **rpartition()**	Split the given string into three parts
 ```python
 >>> sentence = "Hello Python"
 >>>
 print(sentence.rpartition("."))
 ('', '', 'Hello Python')
->>> print(sentence.rpartition("
-"))
+>>> print(sentence.rpartition(" "))
 ('Hello', ' ', 'Python')
 ```
+
+<div id="rsplit"/>
 
 **rsplit()**	Split the string from the right by the specified separator
 ```python
 >>> sentence = "Hello Python"
 >>> print(sentence.rsplit())
 ['Hello', 'Python']
->>> sentence = "Hello-Python-
-Hello"
+>>> sentence = "Hello-Python-Hello"
 >>>
-print(sentence.rsplit(sep="-",
-maxsplit=1))
+print(sentence.rsplit(sep="-", maxsplit=1))
 ['Hello-Python', 'Hello']
 ```
+
+<div id="rstrip"/>
 
 **rstrip()**	Removes trailing characters
 ```python
@@ -418,20 +512,30 @@ maxsplit=1))
 >>> sentence.rstrip()
 '   Python'
 >>>
+>>> win_msg = "** We Won!!! **"
+>>> win_msg
+'** We Won!!! **'
+>>> sentence.rstrip('*')
+' We Won!!! '
+>>>
 ```
+
+<div id="splitlines"/>
 
 **splitlines()**	Split the lines at line boundaries
 ```python
 >>> sentence = '''
-... Welcome to Share to Learn
-... Happy Learning
-... '''
+    Welcome to Share to Learn
+    Happy Learning
+'''
 >>> sentence
 '\nWelcome to Share to Learn\nHappy Learning\n'
 >>> sentence.splitlines()
 ['', 'Welcome to Share to Learn', 'Happy Learning']
 >>>
 ```
+
+<div id="startswith"/>
 
 **startswith()**	Returns “True” if a string starts with the given prefix
 ```python
@@ -445,6 +549,8 @@ False
 >>>
 ```
 
+<div id="strip"/>
+
 **strip()**	Returns the string with both leading and trailing characters
 ```python
 >>> sentence = "  Welcome to Share to Learn  "
@@ -453,6 +559,8 @@ False
 >>>
 ```
 
+<div id="swapcase"/>
+
 **swapcase()**	Converts all uppercase characters to lowercase and vice versa
 ```python
 >>> sentence = "Welcome to Share to Learn"
@@ -460,12 +568,24 @@ False
 'wELCOME TO sHARE TO lEARN'
 ```
 
+<div id="title"/>
+
 **title()**	Convert string to title case
 ```python
+>>> sentence = 'WELCOME TO SHARE TO LEARN'
+>>> sentence.title()
+'Welcome To Share To Learn'
+
+>>> sentence = 'welcome to share to learn'
+>>> sentence.title()
+'Welcome To Share To Learn'
+
 >>> sentence = 'wELCOME TO sHARE TO lEARN'
 >>> sentence.title()
 'Welcome To Share To Learn'
 ```
+
+<div id="translate"/>
 
 **translate()**	Modify string according to given translation mappings
 ```python
@@ -473,11 +593,12 @@ False
 >>> to = "40250666333"
 >>> trans_table =
 str.maketrans(frm, to)
->>> secret_code = "Secret
-Code".translate(trans_table)
+>>> secret_code = "Secret Code".translate(trans_table)
 >>> print(secret_code)
 S0cr06 C3d0
 ```
+
+<div id="upper"/>
 
 **upper()**	Converts all lowercase characters in a string into uppercase
 ```python
@@ -485,6 +606,8 @@ S0cr06 C3d0
 >>> sentence.upper()
 'WELCOME TO PYTHON'
 ```
+
+<div id="zfill"/>
 
 **zfill()**	Returns a copy of the string with ‘0’ characters padded to the left side of the string
 ```python
