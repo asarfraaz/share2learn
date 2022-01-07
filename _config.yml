@@ -16,3 +16,6 @@ github_username:  asarfraaz # DO NOT include the @ character, or else the build 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
 theme: jekyll-theme-cayman
+markdown: GFM
+# The above line is added to fix the table displayed in https://asarfraaz.github.io/share2learn/tutorial/2021/10/05/str-methods.html
+# Suggestion was from : https://github.com/pages-themes/cayman/issues/82#issuecomment-613750651
