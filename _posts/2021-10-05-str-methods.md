@@ -7,50 +7,21 @@ category: Tutorial
 
 ## List of String Methods mentioned in this post
 
-1. [capitalize()](#capitalize)
-1. [casefold()](#casefold)
-2. [center()](#center)
-3. [count()](#count)
-4. [encode()](#encode)
-5. [endswith()](#endswith)
-6. [expandtabs()](#expandtabs)
-7. [find()](#find)
-8. [format()](#format)
-9. [format_map()](#format_map)
-10. [index()](#index)
-11. [isalnum()](#isalnum)
-12. [isalpha()](#isalpha)
-13. [isdecimal()](#isdecimal)
-14. [isdigit()](#isdigit)
-15. [isidentifier()](#isidentifier)
-16. [islower()](#islower)
-17. [isnumeric()](#isnumeric)
-18. [isprintable()](#isprintable)
-19. [isspace()](#isspace)
-20. [istitle()](#istitle)
-21. [isupper()](#isupper)
-22. [join()](#join)
-23. [ljust()](#ljust)
-24. [lower()](#lower)
-25. [lstrip()](#lstrip)
-26. [maketrans()](#maketrans)
-27. [partition()](#partition)
-28. [replace()](#replace)
-29. [rfind()](#rfind)
-30. [rindex()](#rindex)
-31. [rjust()](#rjust)
-32. [rpartition()](#rpartition)
-33. [rsplit()](#rsplit)
-34. [rstrip()](#rstrip)
-35. [splitlines()](#splitlines)
-36. [startswith()](#startswith)
-37. [strip()](#strip)
-38. [swapcase()](#swapcase)
-39. [title()](#title)
-40. [translate()](#translate)
-41. [upper()](#upper)
-42. [zfill()](#zfill)
+<div align="center">
 
+| | | | | | 
+| - | - | - | - | - |
+| 1. [capitalize()](#capitalize) | 2. [casefold()](#casefold) | 3. [center()](#center) | 4. [count()](#count) | 5. [encode()](#encode) | 
+| 6. [endswith()](#endswith)| 7. [expandtabs()](#expandtabs) | 8. [find()](#find) | 9. [format()](#format) | 10. [format_map()](#format_map) |
+| 11. [index()](#index) | 12. [isalnum()](#isalnum) | 13. [isalpha()](#isalpha) | 14. [isdecimal()](#isdecimal) | 15. [isdigit()](#isdigit) |
+| 16. [isidentifier()](#isidentifier) | 17. [islower()](#islower)| 18. [isnumeric()](#isnumeric) | 19. [isprintable()](#isprintable) | 20. [isspace()](#isspace) |
+| 21. [istitle()](#istitle) | 22. [isupper()](#isupper) | 23. [join()](#join) | 24. [ljust()](#ljust) | 25. [lower()](#lower) |
+| 26. [lstrip()](#lstrip)| 27. [maketrans()](#maketrans)| 28. [partition()](#partition)| 29. [replace()](#replace)| 30. [rfind()](#rfind)
+| 31. [rindex()](#rindex)| 32. [rjust()](#rjust)| 33. [rpartition()](#rpartition)| 34. [rsplit()](#rsplit)| 35. [rstrip()](#rstrip)| 
+| 36. [splitlines()](#splitlines)| 37. [startswith()](#startswith)| 38. [strip()](#strip) | 39. [swapcase()](#swapcase) | 40. [title()](#title) | 
+| 41. [translate()](#translate) | |            42. [upper()](#upper) | | 43. [zfill()](#zfill) |
+
+</div>
 
 ---
 
