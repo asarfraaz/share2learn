@@ -1,3 +1,10 @@
+---
+title : Different ways of reading csv file using Pandas
+date : 2022-02-22
+author : Basavaraj
+category : Tutorial
+---
+
 # Pandas
 Lets try to understand what exactly pandas is.
 Pandas is a one of the python library, and it is used to analyze data.
