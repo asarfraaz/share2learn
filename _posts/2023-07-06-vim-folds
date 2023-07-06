@@ -1,0 +1,35 @@
+---
+title: "Folding lines in Vi"
+date: 2023-07-06
+author: Sarfraaz Ahmed
+category: Tutorial
+---
+
+Often while reading code, we encounter scenarios where we want to get an overview of the code.
+
+Sometimes we are interested in 
+
+- viewing the functions present in the code.
+- viewing all classes defined in the code.
+- viewing all methods of a class
+- or just viewing the outer loop of a nested loop code
+
+Most editors allow you to "collapse" a block of code to view just its definition
+
+We could achieve the same and more using some simple key strokes in Vi
+
+Few scenarios are mentioned in the video below :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xGR_0flEV3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+**NOTE** : To make these commands work on Python code you need to set the correct foldmethod as 
+
+```:set foldmethod=indent```
+
+The Vi commands mentioned are as follows :
+
+- ```zM``` : View all definitions in the file ( Toggle all folds )
+- ```zo``` : To open one level of fold
+- ```zR``` : To open all folds
+- ```zM``` : To close all the folds ( Toggle all folds )
+
