@@ -8,3 +8,23 @@
    color: #ff0000;
  }
 }
+
+.dataframe {
+    tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    tbody tr th {
+        vertical-align: top;
+    }
+
+    thead th {
+        text-align: right;
+    }
+
+    table {
+        table-layout: auto;
+        width: 100;
+    }
+}
+
