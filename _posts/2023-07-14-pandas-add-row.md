@@ -40,7 +40,7 @@ Assume we have a DataFrame of Indian cricket players as shown below
 Output : DataFrame with 4 rows
 
 <div>
-<table border="1" style="table-layout: auto; width: 10%;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
@@ -108,7 +108,7 @@ Let's now add column names to each field in these rows and create a DataFrame :
 
 Output : DataFrame with 4 rows
 
-<table border="1" style="table-layout: auto; width: 10%;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
@@ -186,7 +186,7 @@ We can now pass this list of rows to ```from_records``` method to create a DataF
 Output : The single row DataFrame
 
 
-<table border="1" style="table-layout: auto; width: 10%;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
@@ -222,7 +222,7 @@ To append the new row to the end of the existing DataFrame, we use ```concat``` 
 Output : New row (Dhoni) gets added at the end of existing DataFrame
 
 
-<table border="1" style="table-layout: auto; width: 10%;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
@@ -282,7 +282,7 @@ We use ```concat``` method as earlier to add the new row to the top of the exist
 Output : New row (Dhoni) gets added at the top of existing DataFrame
 
 
-<table border="1" style="table-layout: auto; width: 10%;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
@@ -342,7 +342,7 @@ The first piece would contain the first 2 rows
 
 Output : First 2 rows of existing DataFrame
 
-<table border="1" style="table-layout: auto; width: 10%;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
@@ -377,7 +377,7 @@ The second piece would contain all rows except the first 2 rows
 
 Output : All rows except the first 2 rows of existing DataFrame
 
-<table border="1" style="table-layout: auto; width: 10%;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
@@ -420,7 +420,7 @@ We can now concatenate these 2 pieces while keeping the single row DataFrame in 
 
 Output : New row inserted after after first 2 rows of existing DataFrame
 
-<table border="1" style="table-layout: auto; width: 100;">
+<table border="1" style="table-layout: auto;">
   <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
