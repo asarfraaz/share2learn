@@ -6,7 +6,9 @@ category: Tutorial
 ---
 
 <p align="center">
-<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/s_raaz/313020754/" title="Bangalore Winter"><img src="https://live.staticflickr.com/119/313020754_e369b25de7_w.jpg" width="400" height="300" alt="Bangalore Winter"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/s_raaz/313020754/" title="Bangalore Winter"><img src="https://live.staticflickr.com/119/313020754_e369b25de7_w.jpg" width="400" height="300" alt="Bangalore Winter"/></a>
+<br>
+Photo by <a href="https://www.flickr.com/photos/s_raaz/313020754/">Sarfraaz Ahmed</a>, all rights reserved
 </p>
 
 Things to learn in this post
@@ -38,26 +40,8 @@ Assume we have a DataFrame of Indian cricket players as shown below
 Output : DataFrame with 4 rows
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
-    .dataframe table {
-        table-layout: auto;
-        width: 10%;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 10%;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
@@ -124,8 +108,8 @@ Let's now add column names to each field in these rows and create a DataFrame :
 
 Output : DataFrame with 4 rows
 
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 10%;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
@@ -202,8 +186,8 @@ We can now pass this list of rows to ```from_records``` method to create a DataF
 Output : The single row DataFrame
 
 
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 10%;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
@@ -238,8 +222,8 @@ To append the new row to the end of the existing DataFrame, we use ```concat``` 
 Output : New row (Dhoni) gets added at the end of existing DataFrame
 
 
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 10%;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
@@ -298,8 +282,8 @@ We use ```concat``` method as earlier to add the new row to the top of the exist
 Output : New row (Dhoni) gets added at the top of existing DataFrame
 
 
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 10%;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
@@ -358,8 +342,8 @@ The first piece would contain the first 2 rows
 
 Output : First 2 rows of existing DataFrame
 
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 10%;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
@@ -393,8 +377,8 @@ The second piece would contain all rows except the first 2 rows
 
 Output : All rows except the first 2 rows of existing DataFrame
 
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 10%;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
@@ -436,8 +420,8 @@ We can now concatenate these 2 pieces while keeping the single row DataFrame in 
 
 Output : New row inserted after after first 2 rows of existing DataFrame
 
-<table border="1" class="dataframe">
-  <thead>
+<table border="1" style="table-layout: auto; width: 100;">
+  <thead style="text-align: right;">
     <tr style="text-align: center;">
       <th></th>
       <th>Name</th>
