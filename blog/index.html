@@ -24,6 +24,7 @@ description: What did you learn today ?
        <div class="post-entry">
           {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
 	     <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+       <hr/>
        </div>
     </p>
    </article>
