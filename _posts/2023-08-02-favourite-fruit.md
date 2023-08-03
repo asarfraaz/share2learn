@@ -8,9 +8,9 @@ category: Tutorial
 Frequency table mentions the number of occurrences of an item in a container
 
 <p align="center">
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/albedo20/26556937242/in/photolist-GsKfdj-nWd6jA-djb1hA-JggB9o-bu8PG7-g21ZiK-bof4L9-r2gXkN-25HeCA1-oK9ACu-9Jhdtf-4uEftT-FdZmPu-F3jXzx-nATWEB-R5C3s3-aq5Fem-s9UWgQ-4R9Vj7-x2aK3L-aVTcJM-r7Ue5y-CBDAcX-xQBkX-GmpSyb-i8kTF-V7QCU7-MZiCHM-ro1YTv-pw3VBc-7U4y9t-bfvTVV-oP9kaj-2auZgWX-rT6iNb-FxW2oN-SSwygX-252RB2r-7uzZCi-bH3Bmt-bBifSU-oCjCry-pt1Jry-JVyJd9-a5Kx3g-aE2uJS-NcdtFk-wiz6gN-K23dBr-kfLEgt" title="Electric vehicle parking at Google" target="_blank"><img src="https://live.staticflickr.com/1671/26556937242_9c02d76288_w.jpg" width="400" height="300" alt="Electric vehicle parking at Google"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/13070711@N03/28416790260/in/photolist-Ki6tHE-EkZNsY-9tfBxK-8kS8jL-NZ2dTF-Yc6zrq-DfsWA9-28VdrAb-oWWmFE-YhjBH7-iv3mzg-27H5Cvv-aCLwJZ-27Va6TC-BHL9Hm-H8cJ5U-25qvVns-2bLtYfz-J5q9EK-24YKX9Y-J7tKnH-26V1iUQ-26EU8gT-283Ndmk-26bK7wT-SsrGXd-c5yyp7-dL8ahQ-H2iV6i-281Yu8H-wrT1fy-23DNBpi-27Zehxm-w8sauF-BUBPV5-HeT2a-dj9xvR-c2d3rW-7wsk9L-U1Jp2e-24T2tc4-5Lpzap-PEoHUm-RFRopU-249q5C8-2wVjWK-9toESf-A7BeNa-25iJQb7-aSmuEp" title="Fruit Shop @ Russell Market" target="_blank"><img src="https://live.staticflickr.com/8158/28416790260_340ece6da1_w.jpg" width="400" height="336" alt="Fruit Shop @ Russell Market"/></a>
 <br>
-Photo by <a href="https://www.flickr.com/photos/albedo20/" target="_blank">albedo</a>, some rights reserved
+Photo by <a href="https://www.flickr.com/photos/13070711@N03/" target="_blank">P. L. Tandon</a>, some rights reserved
 </p>
 
 ## Frequency Counter
@@ -53,8 +53,7 @@ You might suggest to start with a dictionary that contains all the fruit names a
 Now that we have a well initialised dictionary, we can repeat the earlier code and get the Frequency Table
 
 ```python
-    >>> freq = dict()
-    >>> for name in fruits:
+    >>> for name in set(fruits):
     ...     freq[name] += 1
     ...
     >>> freq
@@ -77,7 +76,7 @@ Let's check out how `fromkeys` works:
 
 All items in `fruits` list are stored as "keys" in the dictionary. Every key has been assigned a value of `None`. But, we wanted the value to be 0 and not None.
 
-Reading the documentation using [help(dict.fromkeys)](https://docs.python.org/3/library/stdtypes.html#dict.fromkeys) we notice that this classmethod takes a "value" parameter that we can specify to be set as the default value instead of `None`
+Reading the documentation using [help(dict.fromkeys)](https://docs.python.org/3/library/stdtypes.html#dict.fromkeys){:target="_blank"} we notice that this classmethod takes a "value" parameter that we can specify to be set as the default value instead of `None`
 
 So, let's try setting the default value to 0, that will help solve this problem :
 
@@ -101,11 +100,13 @@ So, our final code would be
     {'apple': 3, 'mango': 2, 'banana': 1, 'grapes': 1}
 ```
 
+## Tradeoffs
+
 Some of you might be wondering that we could have easily done this using `defaultdict` class as well. 
 
 ```python
     >>> fruits = [ "apple", "mango", "banana", "apple", "apple", "mango", "grapes" ]
-    >>> from collections import defauldict
+    >>> from collections import defaultdict
     >>> freq = defaultdict(int)
     >>> for name in fruits:
     ...     freq[name] += 1
@@ -115,5 +116,12 @@ Some of you might be wondering that we could have easily done this using `defaul
 ```
 
 The problem with this approach is that we need to import `collections` module. If you plan to use `defaultdict` for more than just this one line of code, or may be use other classes from the wonderful `collections` module, then it makes sense to `import collections` module in your program. But, the solution that we got earlier using `fromkeys` classmethod saves us from such module dependencies.
+
+So, it's a tradeoff between using a module or built-in data structure. For, most of the applications, unless they are Enterprise style programs or Frameworks, using the built-in data structure would be the most preferred option.
+
+
+## Discussion
+
+[Start a discussion on GitHub](https://github.com/asarfraaz/share2learn/discussions/new/choose){:target="_blank"} about this article and let me know your thoughts or suggestions.
 
 
