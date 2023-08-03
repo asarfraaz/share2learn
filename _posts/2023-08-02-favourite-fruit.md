@@ -5,7 +5,11 @@ author: Sarfraaz Ahmed
 category: Tutorial
 ---
 
-Frequency table mentions the number of occurrences of an item in a container
+A Supermarket opened up next to a school. They wanted to conduct a survey to check which fruits children like to eat the most. They go to their school and ask each one to write down their favourite fruit. Let's assume that this is the list that they got by conducting this survey in a classroom of 7 students.
+
+```python
+    >>> fruits = [ "apple", "mango", "banana", "apple", "apple", "mango", "grapes" ]
+```
 
 <p align="center">
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/13070711@N03/28416790260/in/photolist-Ki6tHE-EkZNsY-9tfBxK-8kS8jL-NZ2dTF-Yc6zrq-DfsWA9-28VdrAb-oWWmFE-YhjBH7-iv3mzg-27H5Cvv-aCLwJZ-27Va6TC-BHL9Hm-H8cJ5U-25qvVns-2bLtYfz-J5q9EK-24YKX9Y-J7tKnH-26V1iUQ-26EU8gT-283Ndmk-26bK7wT-SsrGXd-c5yyp7-dL8ahQ-H2iV6i-281Yu8H-wrT1fy-23DNBpi-27Zehxm-w8sauF-BUBPV5-HeT2a-dj9xvR-c2d3rW-7wsk9L-U1Jp2e-24T2tc4-5Lpzap-PEoHUm-RFRopU-249q5C8-2wVjWK-9toESf-A7BeNa-25iJQb7-aSmuEp" title="Fruit Shop @ Russell Market" target="_blank"><img src="https://live.staticflickr.com/8158/28416790260_340ece6da1_w.jpg" width="400" height="336" alt="Fruit Shop @ Russell Market"/></a>
@@ -15,13 +19,9 @@ Photo by <a href="https://www.flickr.com/photos/13070711@N03/" target="_blank">P
 
 ## Frequency Counter
 
-A Supermarket opened up next to a school. They wanted to conduct a survey to check which fruits children like to eat the most. They go to their school and ask each one to write down their favourite fruit. Let's assume that this is the list that they got by conducting this survey in a classroom of 7 students.
-
-```python
-    >>> fruits = [ "apple", "mango", "banana", "apple", "apple", "mango", "grapes" ]
-```
-
 We need to create a frequency counter from this list. Or more formally a Frequency table that captures the number of occurrences for each fruit in the list.
+
+Frequency table mentions the number of occurrences of an item in a container
 
 You might think that this should do it
 ```python
