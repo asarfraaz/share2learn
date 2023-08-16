@@ -108,6 +108,34 @@ We now need to iterate over `ranks` dictionary and append the name to `names` di
     >>>
 ```
 
+Oops!! That does not look good. This is a typical side effect of using an empty list as an initial value. Python creates the default empty list at compile time, and so every key gets a reference to the same original empty list. We can verify that by checking the ids of the lists
+
+```python
+    >>> for key in names:
+    ...     print(id(names[key]))
+    ...
+    4335532544
+    4335532544
+    4335532544
+    4335532544
+    4335532544
+    >>>
+
+    >>> # Or just trying to be more adventurous to get a more meaningful output
+    >>> for key in names:
+    ...     idstr = f'id(names[{key!r}])'
+    ...     print(f'{idstr} = {eval(idstr)}')
+    ...
+    id(names[1]) = 4335532544
+    id(names[2]) = 4335532544
+    id(names[3]) = 4335532544
+    id(names[4]) = 4335532544
+    id(names[5]) = 4335532544
+    >>>
+```
+
+So, what we need is a way to create a new list everytime a new key is added to `names` dictionary. We want the key to be give a "default" value everytime it is created for the first time. This is exactly what `dict.setdefault` does !!!
+
 
 ## Discussion
 
