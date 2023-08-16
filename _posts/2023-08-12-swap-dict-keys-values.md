@@ -134,8 +134,56 @@ Oops!! That does not look good. This is a typical side effect of using an empty 
     >>>
 ```
 
-So, what we need is a way to create a new list everytime a new key is added to `names` dictionary. We want the key to be give a "default" value everytime it is created for the first time. This is exactly what `dict.setdefault` does !!!
+So, what we need is a way to create a new list everytime a new key is added to `names` dictionary. We want the key to be given a "default" value of `[]` everytime it is created for the first time. This is exactly what `dict.setdefault` does !!!
 
+
+## Using setdefault method
+
+`setdefault` method of dictionary is a complement of the `get` method, but useful when you want to set a value to a key for the first time we seek it. It automatically detects the absence of the key and creates it for us. It also assigns the default value at the time of creating this new key in the dictionary. The following example might make it easy to understand how it works
+
+```python
+    >>> fun = dict()
+    >>> fun
+    {}
+    >>> fun.get(10)
+    >>> fun.setdefault(10, [])
+    []
+    >>> fun
+    {10: []}
+```
+
+Notice that the `setdefault` method does 2 things
+    - It first creates the new key value pair, assigning the default value `[]` to the new key
+    - And also returns the new value : `[]`
+
+We can use the returned value to perform some operations on it.
+
+```python
+    >>> fun = dict()
+    >>> retval = fun.setdefault(10, [])
+    >>> fun
+    {10: []}
+    >>> retval
+    []
+    >>> retval.append("abcd")
+    >>> retval
+    ['abcd']
+    >>> fun
+    {10: ['abcd']}
+```
+
+
+The best part is that it now returns the available list for subsequent calls of setdefault. So, we can easily change `setdefault` with `append` to add a new value to the newly created list
+
+```
+    >>> fun.setdefault(10, [])
+    ['abcd']
+    >>> 
+    >>> fun.setdefault(20, []).append("xyz")
+    >>> # append does not return any value
+    >>> fun
+    {10: ['abcd'], 20: ['xyz']}
+```
 
 ## Discussion
 
