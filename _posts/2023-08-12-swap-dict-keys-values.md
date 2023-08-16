@@ -7,56 +7,62 @@ category: Tutorial
 
 Schools were (and some are still) notorious for building a sense of competition in children through their "ranking" system. The one who writes the most number of correct answers ( irrespective of how much that student understood it ) always gets a better rank than someone who just could not put the answer in the right words ( as expected by the evaluator )
 
-However one may feel about that "ranking" system, it comes in handy while learning something about Python Dictionaries. The ranks secured by students in class can be represented in a Python Dictionary as shown below
-```python
-    >>> ranks = {
-                'Sachin' : 1,
-                'Sehwag' : 2,
-                'Dhoni'  : 3,
-                'Virat'  : 3,
-                'Rohit'  : 4,
-                'Manoj'  : 5,
-               }
-```
+However one may feel about that "ranking" system, it comes in handy while learning something about Python Dictionaries.
 
 <p align="center">
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/47134714@N04/48144513087/in/photolist-2gmndpR-GZbdUh-23rfC7K-dPEpSs-78NL36-2o8HPe8-Cd4dnS-Cez8M2-dKJ87N-BUJncU-Fpfa2k-M9vHGT-2mwPnw4-BP7UYa-rsJzdF-2mx12ab-EzWcxy-FxuUwW-EAcddF-2mwNnb5-2mwNnfo-CmS3Ba-L7ktcs-BNmgoZ-2omcZFY-Qb7RLp-Akm6Nh-RNrvNC-2nCYfYf-CoMrXx-2mwJBuA-2mwPnoU-2mx2gdM-2dRNVad-Ftzs4j-FphRAT-Vz3doJ-2oDoCgj-CUYopT-2cQqj1W-2g6CcL6-24oJebW-2cxDGzR-2mzErhx-2dRNWJW-2mwKSVv-2jLX5TH-2jZkfAC-EMgiyg-EMgig2" title="Mirror Mirror on the Wall...." target="_blank"><img src="https://live.staticflickr.com/65535/48144513087_5bd619f61f_w.jpg" width="400" height="191" alt="Mirror Mirror on the Wall...."/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/nadircruise/6425616037/in/photolist-4wkEdj-Fg6Sen-2aJykpK-Nn9a1T-2b2maas-2aJymk2-2b2m9pj-2b2maNb-Nn96BP-2b2mbMW-aNBFBM-29mQf3L-29mQcZs-2c3SC6f-2b2mbk3-Nn99j2-2c8majP-2aJygHB-Wfik9f-2aJyf94-aMP2Hx-aMNTzF-aMNSRi-aMNXMp-aMNSce-aMNZMD-aMNUGa-JE5Q5x-27dzrrA" title="Battle Royale" target="_blank"><img src="https://live.staticflickr.com/6100/6425616037_1472443038_w.jpg" width="400" height="267" alt="Battle Royale"/></a>
 <br>
-Photo by <a href="https://www.flickr.com/photos/47134714@N04/" target="_blank">Ed</a>, some rights reserved
+Photo by <a href="https://www.flickr.com/photos/nadircruise/" target="_blank">Nadir Hashmi</a>, some rights reserved
 </p>
+
+The ranks secured by students in a class can be represented in a Python Dictionary as shown below
+```python
+    >>> toprank = {
+                    'Sachin' : 1,
+                    'Sehwag' : 2,
+                    'Dhoni'  : 3,
+                    'Virat'  : 3,
+                    'Rohit'  : 4,
+                    'Manoj'  : 5,
+                   }
+```
+
 
 ## Working with Dictionary data
 
-Using the `ranks` dictionary it is now very easy to find the rank of a student . To find `Dhoni`'s rank, we can do something like
+Using the `toprank` dictionary it is now very easy to find the rank of a student . To find `Dhoni`'s rank, we can do something like
 
 ```python
-    >>> ranks['Dhoni']
+    >>> toprank['Dhoni']
     3
-    >>> ranks.get('Dhoni')
+    >>> toprank.get('Dhoni')
     3
 ```
 
 The `get()` method comes in handy when dealing with names that might not be present in the dictionary
 
 ```python
-    >>> ranks['Dravid']
+    >>> toprank['Ganguly']
     KeyError: ...
-    >>> ranks.get('Dravid', 'N/A')
+    >>> toprank.get('Ganguly')
+    >>>
+    >>> toprank.get('Ganguly', 'N/A')
     'N/A'
-    >>> ranks.get('Dhoni', 'N/A')
+    >>> toprank.get('Dhoni', 'N/A')
     3
 ```
 
-## Swapping key-value pairs
+So, how can we find the name of the student who secured 2nd rank using the `toprank` dictionary ?
 
-How can we find the name of the student who secured 2nd rank using the `ranks` dictionary ?
+
+## Swapping key-value pairs
 
 To be able to answer that question, it would be more useful to have a dictionary that stored the ranks of students as keys and their names as values
 
-Let's swap the key-value pairs of `ranks` dictionary using a simple Dictionary Comprehension
+Let's swap the key-value pairs of `toprank` dictionary using a simple Dictionary Comprehension
 
 ```python
-    >>> names = { val:key for key,val in ranks.items() }
+    >>> names = { val:key for key,val in toprank.items() }
     >>> names[1]
     'Sachin'
     >>> names
@@ -74,28 +80,36 @@ And we can now access rank holder names based on their ranks as below:
 
 Oops !!! We expected "Dhoni", but got "Virat". What's going wrong here ? Something looks fishy in that new `names` dictionary created above. Doesn't it? Dhoni's name is missing !! Where did that go ?
 
-Well, on closer look at the original `ranks` dictionary you will notice that "Dhoni" and "Virat" secured the same ranks. When the `names` dictionary for populated, for the rank "3", it first added "Dhoni" as its value. Then, when it picked the next element from `ranks`, it noticed the key "3" already being present in `names` dictionary. Since keys are unique in a dictionary, the new value "Virat" replaced the existing value "Dhoni". So, that is why "Virat" replaced "Dhoni" :-)
+Well, on a closer look at the original `toprank` dictionary you will notice that "Dhoni" and "Virat" secured the same ranks.
+- When the `names` dictionary was populated for the rank "3", it first added "Dhoni" as its value.
+- Then, when it picked the next element from `toprank`, it noticed the key "3" already being present in `names` dictionary.
+- Since keys are unique in a dictionary, no new key-value pair was created.
+- Rather, it updated the value corresponding to the existing key "3"
+- For the existing key "3", the new value "Virat" replaced the existing value "Dhoni".
 
-A proper way of storing this information about more than one person have secured the same rank, can be achieved if we store all the names as a list for the given rank
+So, that is why "Virat" replaced "Dhoni" :-)
+
+A proper way of storing this information about more than one person having secured the same rank, can be achieved if we store all the names as a list for the given rank
 
 ## Dictionary of keys with a list of values
 
-To create a dictionary of list, we would have to first initialise the dictionary, such that every key is created with an empty list. We can then iterate over each "rank" and simply append the person's "name" to that existing list. We need to make sure that the values of `ranks` dictionary should be used to create the keys of `names` dictionary
+To create a dictionary of list, we would have to first initialise the dictionary, such that every key is created with an empty list. We can then iterate over each "rank" and simply append the person's "name" to that existing list.
 
-Let's use the technique we saw in our previous post, and use `dict.fromkeys()` classmethod to initialise the dictionary
+Let's use the [technique we saw in our previous post](https://asarfraaz.github.io/share2learn/tutorial/2023/08/02/favourite-fruit.html), and use `dict.fromkeys()` classmethod to initialise the dictionary. We need to be careful to use the values of `toprank` dictionary for creating the keys of the new `names` dictionary
 
 ```python
-    >>> names = dict._fromkeys(ranks.values(), [])
+    >>> names = dict.fromkeys(toprank.values(), [])
     >>> names
     {1: [], 2: [], 3: [], 4: [], 5: []}
+    >>>
 ```
 
-We now need to iterate over `ranks` dictionary and append the name to `names` dictionary
+We now need to iterate over `toprank` dictionary and append the student's name to `names` dictionary
 
 ```python
-    >>> for name in ranks:
-    ...     new_key = ranks[name]
-    ...     new_val = name
+    >>> for stu in toprank:
+    ...     new_key = toprank[stu]
+    ...     new_val = stu
     ...     names[new_key].append(new_val)
     ...
     >>> from pprint import pprint
@@ -108,7 +122,9 @@ We now need to iterate over `ranks` dictionary and append the name to `names` di
     >>>
 ```
 
-Oops!! That does not look good. This is a typical side effect of using an empty list as an initial value. Python creates the default empty list at compile time, and so every key gets a reference to the same original empty list. We can verify that by checking the ids of the lists
+Oops!! That does not look good. What just happened there?
+
+This is a typical side effect of using an empty list as an initial value. Python creates the default empty list at compile time, and so every key gets a reference to the same original empty list. We can verify that by checking the ids of the lists
 
 ```python
     >>> for key in names:
@@ -153,8 +169,9 @@ So, what we need is a way to create a new list everytime a new key is added to `
 ```
 
 Notice that the `setdefault` method does 2 things
-    - It first creates the new key value pair, assigning the default value `[]` to the new key
-    - And also returns the new value : `[]`
+
+- It first creates the new key-value pair, assigning the default value `[]` to the new key
+- And it also returns the new value : `[]`
 
 We can use the returned value to perform some operations on it.
 
@@ -172,10 +189,9 @@ We can use the returned value to perform some operations on it.
     {10: ['abcd']}
 ```
 
+The best part is that it now returns the existing list for subsequent calls of setdefault for an existing key. So, we can easily chain `setdefault` with `append` to add a new value to the newly created list
 
-The best part is that it now returns the available list for subsequent calls of setdefault. So, we can easily change `setdefault` with `append` to add a new value to the newly created list
-
-```
+```python
     >>> fun.setdefault(10, [])
     ['abcd']
     >>> 
@@ -183,7 +199,36 @@ The best part is that it now returns the available list for subsequent calls of 
     >>> # append does not return any value
     >>> fun
     {10: ['abcd'], 20: ['xyz']}
+    >>>
 ```
+
+## Final Solution
+
+Let's combine all the things we learnt above to solve the problem at hand
+
+```python
+    >>> toprank 
+    {'Sachin' : 1, 'Sehwag' : 2, 'Dhoni'  : 3, 'Virat'  : 3, 'Rohit'  : 4, 'Manoj'  : 5}
+    >>>
+    >>> names = dict()
+    >>> for stu in toprank:
+    ...     new_key = toprank[stu]
+    ...     new_val = stu
+    ...     names.setdefault(new_key, []).append(new_val)
+    ...
+    >>>
+    >>> names
+    {1: ['Sachin'], 2: ['Sehwag'], 3: ['Dhoni', 'Virat'], 4: ['Rohit'], 5: ['Manoj']}
+    >>>
+    >>> names[3]
+    ['Dhoni', 'Virat']
+    >>>
+```
+
+## Tradeoffs
+
+The tradeoffs of using this approach to using `defaultdict` with `[]` from `collections` module are exactly same as we saw in "[Favourite Fruit](https://asarfraaz.github.io/share2learn/tutorial/2023/08/02/favourite-fruit.html)" post
+
 
 ## Discussion
 
