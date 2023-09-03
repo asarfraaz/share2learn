@@ -1,6 +1,6 @@
 ---
 title: "Adding sequential numbers to a file"
-date: 2023-09-01
+date: 2023-09-02
 author: Sarfraaz Ahmed
 category: TIL
 ---
