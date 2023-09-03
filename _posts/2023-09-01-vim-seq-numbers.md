@@ -93,6 +93,12 @@ Id,Name,City
 ** Using Vim is like magic !!! ** 
 </div>
 
+To learn more about this exciting Vim magic (like) command
+
+```vim
+:help v_g_CTRL-A
+```
+
 ## Discussion
 
 [Start a discussion on GitHub](https://github.com/asarfraaz/share2learn/discussions/new/choose){:target="_blank"} about this article and let me know your thoughts or suggestions.
