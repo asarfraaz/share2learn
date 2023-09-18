@@ -36,10 +36,9 @@ Instead of me writing so much, I thought of asking ChatGPT to write a blog post
 explaining about the differences between an LLM and ChatGPT. I got some
 interesting and surprising results.
 
-- At first, I got a [very wrong answer](http://127.0.0.1:4000/data/wrong-llm.html) !!!
 - At first, I got a [very wrong answer](https://asarfraaz.github.io/share2learn/data/wrong-llm.html) !!!
-- I then gave it a task to write a blog that would explain the difference between LLM and ChatGPT in such simple terms that even [my grandmother should understand it](http://127.0.0.1:4000/data/grandma-llm-chatgpt.html) ( I wanted to check if it understood that I basically was asking for an explanation in layman terms )
-- I finally asked it to spice up the blog by making it a [conversation between a grandmother and her grandson](http://127.0.0.1:4000/data/convo-llm-chatgpt.html). This was a very interesting read indeed !!! I was amazed by the conversation style that it chose for this. It also gave a summary of the entire conversation at the end that was crisp and to the point !!!
+- I then gave it a task to write a blog that would explain the difference between LLM and ChatGPT [in such simple terms that even my grandmother should understand it](https://asarfraaz.github.io/share2learn/data/grandma-llm-chatgpt.html) ( I wanted to check if it understood that I basically was asking for an explanation in layman terms )
+- I finally asked it to spice up the blog by making it a [conversation between a grandmother and her grandson](https://asarfraaz.github.io/share2learn/data/convo-llm-chatgpt.html). This was a very interesting read indeed !!! I was amazed by the conversation style that it chose for this. It also gave a summary of the entire conversation at the end that was crisp and to the point !!!
 
 ## Discussion
 
