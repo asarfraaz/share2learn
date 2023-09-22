@@ -7,16 +7,16 @@ category: Tips
 
 "How can I portray my skills in my resume?"
 
-This is one question that most Professionals usually ask me about
+This is one question that most Professionals usually ask me about.
 
-The ones who ask this question are usually 
+Most of them usually ask this question when they are
 
 - moving from one role to another, or
 - from one project to another, 
 - or sometimes just completed a Certification Course and want to transition
   into another domain based on their newly acquired skill
 
-Unfortunately for most, this question is asked too late in the cycle. They want
+Unfortunately for most, they ask question too late in the cycle. They want
 to jump the wagon and now seeking out answers on what to do. My answer is
 usually to sit down and go through all the works they have done ( from the
 smallest to the mightiest ) and prepare a document mentioning their
@@ -31,7 +31,7 @@ they have joined. Or may be its a new Course that they have enrolled into.
 
 The simple answer is : **"Write it down"**
 
-The details are in, "What to write" and "Where to write"
+The details though are in, "What to write" and "Where to write"
 
 ## What to write
 
@@ -41,24 +41,24 @@ of those "learning" moments in your day. Keep looking out for these small
 moments in life and work. These are the things that one should write. It could
 be something like
 
-- Writing code using a new style
-- Designing concept you saw being applied that you were not aware of
+- Writing code using a new style or syntax
+- A new design concept you saw being applied that you were not aware of
 - Testing scenario thats new for you
 - A automation script you saw someone use to be more productive
 - An email that caught your eye, for its form and structure
 - A new syntax you learnt about your programming language from a video
 
-When you learn or notice something new, Write down these things in your book
+When you learn or notice something new, write down these things in your book
 
 - Narration in your own words about what was "new" for you
 - Mention the scenario and context when you saw that somethng "new"
-- What did you learn from it?
+- Then think and write down what you learn from it
 
 Sounds a lot? May be. But for someone who cares about himself, it would be fun.
 
 Takes a lot of time? May be you have more time to spend watching the works of
 other creators on that "income reducing electronic gadget" in your hand that is
-prefixed with the word smart.
+prefixed with the word smart. Stop giving excuses. It's your life. Your choice.
 
 
 # Where to write ?
@@ -85,16 +85,20 @@ How you present this is all upto you. May be you
 
 ## Practical suggestions
 
-1. Always carry a pocket book to write down small notes as soon as you notice your "learning" moment.
-2. Allocate time 3 to 4 times a week to write down your "learnings"
+1. Always carry a pocket book to write down small notes as soon as you notice
+   your "learning" moment.
+2. Allocate time of about 3 to 4 times a week to write down your "learnings"
 3. Target to post atleast 2 to 3 blogs per month
 
-Over a period of a year, you would have written atleast 20 or more blog posts
+Over a period of a year, you would have written atleast 20 or more blog posts.
+If you accomplish this. Then CONGRATULATIONS !!! You now have your own personal
+portfolio
 
-This blog is what you can mention in your resume. It shows your professional
-side with valuable quantitative points to backup your understanding of various
-concepts. Proof that you just did not warm the benches at work, but applied
-your brain cells to add value to the product you contributed.
+This portfolio or blog is what you can mention in your resume. It shows your
+unseen professional personality with valuable quantitative data points to
+backup your understanding of various concepts. Proof that you just did not warm
+the benches at work, but applied your brain cells to add value to the product
+you contributed.
 
 Creating a GitHub Repository with your code accomplishments is an added bonus
 
