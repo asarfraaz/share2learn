@@ -14,10 +14,10 @@ file ) and write some code like this
 
 
 ```python
+>>> answers = [ "Yes", "Yeah", "Nods"]
 >>> opinion = input("Will you marry me? ")
 Will you marry me? Nods
 >>>
->>> answers = [ "Yes", "Yeah", "Nods"]
 >>> print("Hurray !!!" if opinion in answers else "Try again later ...")
 Hurray !!!
 >>>
@@ -412,7 +412,7 @@ DataFrame
   background-color: bisque;
 }
 </style>
-<table id="T_b7ce2_">
+<table border="1" id="T_b7ce2_">
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
@@ -473,9 +473,8 @@ For highlighting specific rows or columns or cells in a Pandas Dataframe, we
 use it's `style` property
 
 One handy method on the `style` property is `highlight_null`. As the name
-suggests, it is used to highlight empty or `NaN` entries in a DataFrame. The
-usefulness of this is that it becomes pretty easy to visually spot the empty
-cells.
+suggests, it is used to highlight empty or `NaN` entries in a DataFrame. This
+comes in pretty handy when we want to visually spot the empty cells.
 
 Following code explains how `highlight_null` can be used to highlight empty
 cells with a "lightsalmon" color
@@ -541,12 +540,12 @@ cells with a "lightsalmon" color
 
 Here, we have used the color name as "lightsalmon". You can use any other color
 name as well. You can find the list of the colors that you can provide at [this
-stackoverflow answer](https://stackoverflow.com/a/37232760/4106458)
+stackoverflow answer](https://stackoverflow.com/a/37232760/4106458){:target="_blank"}
 
 Unfortunately, there is no direct method like `highlight_null` that can be used
 to highlight specific cells. To be able to highlight specific cells based on a
 condition, we need to tweak the underlying html properties as mentioned in
-[this stackoverflow answer](https://stackoverflow.com/a/53185070/4106458)
+[this stackoverflow answer](https://stackoverflow.com/a/53185070/4106458){:target="_blank"}
 
 We use `applymap` method to element-wise apply these CSS style changes
 
