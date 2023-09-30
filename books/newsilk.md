@@ -18,8 +18,8 @@ This is a short summary of my notes from ths book
 | **Book Name**   | The New Silk Roads                  | **Tagline**     | The Present and Future of the World |
 | **Author**      | Peter Frankopan                    | **Year**        | 2018                                |
 | **Pages**       | 253                                 | **Chapters**    | 6                                   |
-| **Start Date**  | 12-Jul-2023                         | **End Date**    |                                     |
-| **Status** | In Progress | **Total Days**  | 2 months and counting ...           |
+| **Start Date**  | 12-Jul-2023                         | **End Date**    | 24-Sep-2023                         |
+| **Status** | Completed | **Total Days**  | ~2.5 months               |
 
 
 ## Chapter 1 : Introduction
@@ -33,7 +33,3 @@ This is a short summary of my notes from ths book
 ## Chapter 5 : The Roads to Rivalry
 
 ## Chapter 6 : The Roads to the Future
-
-This is what I have read in this book
-- point 1
-- point 2
