@@ -7,7 +7,7 @@ category: TIL
 
 
 We were writing a Bash Shell script where a word is taken as command line
-argument. This word is then used a key to fetch the corresponding field from a
+argument. This word is then used as key to fetch the corresponding field from a
 csv file. All worked fine, except that the student asked if we can give the
 command line argument in lower case
 
@@ -28,7 +28,7 @@ shell$
 shell$ echo $name | tr 'a-z' 'A-Z'
 shell$ echo $name
 AJAY
-shell$
+shell$ 
 ```
 
 ## Bash Parameter Expansion
@@ -45,10 +45,24 @@ shell$
 shell$ echo ${name^^}
 shell$ echo $name
 AJAY
-shell$
+shell$ 
 ```
 
-For more: Read "[Bash Shell Expansion Manual](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)"
+If we had to do the opposite and change all characters to lowercase, then we
+could use the following Bash Parameter Expansion syntax instead
+
+```bash
+shell$ name="Ajay"
+shell$ echo $name
+Ajay
+shell$ 
+shell$ echo ${name,,}
+shell$ echo $name
+ajay
+shell$ 
+```
+
+For more: Read "[Bash Shell Expansion Manual](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html){:target="_blank"}"
 
 
 ## Discussion
