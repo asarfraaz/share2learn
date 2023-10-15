@@ -7,9 +7,10 @@ category: TIL
 
 
 We were writing a Bash Shell script where a word is taken as command line
-argument. This word is then used as key to fetch the corresponding field from a
-csv file. All worked fine, except that the student asked if we can give the
-command line argument in lower case
+argument. This word is then used as key to fetch a line from a csv file and
+then pull out some specific field in it using `awk` command. All worked fine,
+except that the student asked if we can give the command line argument in lower
+case
 
 That got us into thinking. The key in the csv file was all in uppercase. So, as
 long as we gave the word on the command line argument in uppercase, we could
@@ -31,11 +32,21 @@ AJAY
 shell$ 
 ```
 
+The `tr` command maps every single lowercase alphabet `'a-z'` with its
+corresponding uppercase alphabet `'A-Z'`
+
+The problem with this approach is that everytime we use a pipe (`|`), a new
+shell is launched to execute the command. So, in this case, there are 2 shell
+processes created. One shell process is created for `echo` and it's output is
+then piped to another shell process that is created for `tr`. It would be more
+efficient if the entire string operation is performed in a single shell process
+
 ## Bash Parameter Expansion
 
-This task becomes pretty easy when we use "Parameter Expansion" feature of
-Bash. This is how we can change all characters to upper case using "Parameter
-Expansion" in Bash
+This  efficiency can be achieved using "Parameter Expansion" feature of Bash.
+The code for this task also becomes pretty easy. We can use `^^` to change all
+characters to upper case inside "Parameter Expansion" in Bash as shown below
+
 
 ```bash
 shell$ name="Ajay"
@@ -49,7 +60,8 @@ shell$
 ```
 
 If we had to do the opposite and change all characters to lowercase, then we
-could use the following Bash Parameter Expansion syntax instead
+could use `,,` inside Parameter Expansion in Bash as shown below
+
 
 ```bash
 shell$ name="Ajay"
